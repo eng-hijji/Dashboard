@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+@import "tailwindcss";
+body {
+  line-height: 140%;
+}
+@font-face {
+  font-family: "Tajawal-bold";
+  src: url("../fonts/Tajawal-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tajawal-med";
+  src: url("../fonts/Tajawal-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tajawal-reg";
+  src: url("../fonts/Tajawal-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  color: rgba(166, 255, 221, 0.5);
+}
+@theme {
+  --color-background: #fafafa;
+  --color-green: #075e66;
+  --color-green-blue: #81c6c3;
+  --color-mistake-red: #f53f3f;
+  --color-exit-red: #f53f3f;
+  --color-notification-red: #ff2f2f;
+  --color-pass-gray: #4e5969;
+  --color-label-black: #1d2129;
+  --color-selected-green: #81c6c3;
+  --color-main-bg: white;
+  --font-tajawal-bold: "Tajawal-bold", sans-serif;
+  --font-tajawal-med: "Tajawal-med", sans-serif;
+  --font-tajawal-regular: "Tajawal-reg", sans-serif;
+  --animate-loading: loading 0.5s linear infinite;
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

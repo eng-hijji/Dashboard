@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخطط الأعمدة المستديرة - التحكم المتجاوب</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js Library CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen p-4 md:p-8 flex flex-col items-center">
+
+    <!-- Top Controller Bar to Demo Layout States -->
+    <div class="w-full max-w-6xl mb-8 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-4 items-center justify-between">
+        <div class="text-right">
+            <h1 class="text-md font-bold text-gray-800">تطبيق أنماط العرض المتجاوبة (Responsive Layout Controller)</h1>
+            <p class="text-xs text-gray-400">اضغط على الأنماط لرؤية تكيّف المخطط تلقائياً</p>
+        </div>
+        
+        <!-- Toggle Buttons -->
+        <div class="flex bg-gray-100 p-1 rounded-xl gap-1 w-full sm:w-auto">
+            <button id="btn-grid" class="flex-1 sm:flex-none px-4 py-2 text-xs font-bold rounded-lg transition-all text-gray-500 hover:text-gray-800">
+                شبكة عمل (Grid)
+            </button>
+            <button id="btn-card" class="flex-1 sm:flex-none px-4 py-2 text-xs font-bold rounded-lg transition-all bg-white text-blue-600 shadow-sm">
+                بطاقة مستقلة (Card)
+            </button>
+            <button id="btn-fullscreen" class="flex-1 sm:flex-none px-4 py-2 text-xs font-bold rounded-lg transition-all text-gray-500 hover:text-gray-800 flex items-center justify-center gap-1.5">
+                <span>ملء الشاشة</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Dynamic Layout Container -->
+    <div id="layout-wrapper" class="w-full max-w-4xl transition-all duration-300">
+        
+        <!-- Inside this grid, we will toggle classes between a 3-column Grid and a single centered Card -->
+        <div id="grid-container" class="grid grid-cols-1 gap-6 transition-all duration-300">
+            
+            <!-- Side Card 1 (Only visible in Grid mode) -->
+            <div id="extra-card-1" class="hidden bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <h3 class="text-sm font-bold text-gray-400 mb-2">إجمالي المسجلين</h3>
+                <p class="text-3xl font-bold text-gray-800">1,420 <span class="text-xs text-green-500 font-medium">+12%</span></p>
+                <div class="mt-4 h-2 bg-gray-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-emerald-400 w-[72%] rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- THE MAIN CHART CARD (Can be isolated, in a grid, or fullscreen) -->
+            <div id="chart-card" class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm transition-all duration-300 flex flex-col justify-between">
+                
+                <!-- Card Header -->
+                <div class="flex justify-between items-start mb-6">
+                    <div class="text-right">
+                        <h2 class="text-lg font-bold text-gray-800 font-tajawal-bold">توزيع الفئات العمرية</h2>
+                        <p class="text-xs text-gray-400">إحصائيات المستخدمين حسب الفئة العمرية</p>
+                    </div>
+                    <!-- Inline Fullscreen Card Trigger -->
+                    <button id="card-expand-trigger" class="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- 
+                  THE CRITICAL WRAPPER:
+                  - Needs relative positioning
+                  - Needs a set height (e.g., h-[250px])
+                  - Will stretch to h-full/w-full when parent expands to fullscreen 
+                -->
+                <div id="canvas-wrapper" class="relative w-full h-[250px] transition-all duration-300">
+                    <canvas id="ageDistributionChart"></canvas>
+                </div>
+
+                <!-- Footer details (optional) -->
+                <div class="mt-4 pt-4 border-t border-gray-50 flex justify-between items-center text-xs text-gray-400">
+                    <span>تحديث فوري</span>
+                    <span>العدد الإجمالي: 710 مستخدم</span>
+                </div>
+            </div>
+
+            <!-- Side Card 2 (Only visible in Grid mode) -->
+            <div id="extra-card-2" class="hidden bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <h3 class="text-sm font-bold text-gray-400 mb-2">معدل التفاعل</h3>
+                <p class="text-3xl font-bold text-gray-800">84.3% <span class="text-xs text-blue-500 font-medium">ممتاز</span></p>
+                <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-0.5 rounded bg-blue-50 text-blue-600 text-[10px] font-bold">الهاتف 62%</span>
+                    <span class="px-2 py-0.5 rounded bg-purple-50 text-purple-600 text-[10px] font-bold">الحاسوب 38%</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ctx = document.getElementById('ageDistributionChart').getContext('2d');
+
+            // Exact pill-color scheme matching your dashboard reference
+            const colorPalette = [
+                '#84D0A2', '#85C4C9', '#10B981', '#F59E0B', '#3B82F6', 
+                '#06B6D4', '#F97316', '#FBBF24', '#8B5CF6', '#A3E635', '#EC4899'
+            ];
+
+            const ageLabels = [
+                '0-14', '15-18', '19-24', '25-34', '35-44', '45-54', '55-64', '65+', '75-84', '85+', '95+'
+            ];
+
+            const chartData = [85, 65, 70, 60, 100, 50, 95, 30, 70, 40, 35];
+
+            // Initialize Chart.js
+            const ageChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ageLabels,
+                    datasets: [{
+                        data: chartData,
+                        backgroundColor: colorPalette,
+                        barPercentage: 0.4, // Keep bars thin and sleek
+                        categoryPercentage: 0.8,
+                        borderRadius: 50, // Pill/Capsule shaped bars
+                        borderSkipped: false // Round both top and bottom edges
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false, // MANDATORY: Allows custom sizing based on wrapper
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            enabled: true,
+                            backgroundColor: '#1E293B',
+                            titleFont: { family: 'Tajawal', size: 12 },
+                            bodyFont: { family: 'Tajawal', size: 12 },
+                            padding: 10,
+                            displayColors: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            display: false, // Minimalist clean look (hides numbers on Y)
+                            grid: { display: false }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: {
+                                font: { family: 'Tajawal', size: 11, weight: '500' },
+                                color: '#9CA3AF'
+                            },
+                            border: { display: false }
+                        }
+                    }
+                }
+            });
+
+            // --- Layout Controller Engine ---
+            const btnGrid = document.getElementById('btn-grid');
+            const btnCard = document.getElementById('btn-card');
+            const btnFullscreen = document.getElementById('btn-fullscreen');
+            const cardExpand = document.getElementById('card-expand-trigger');
+
+            const layoutWrapper = document.getElementById('layout-wrapper');
+            const gridContainer = document.getElementById('grid-container');
+            const chartCard = document.getElementById('chart-card');
+            const canvasWrapper = document.getElementById('canvas-wrapper');
+
+            const extraCard1 = document.getElementById('extra-card-1');
+            const extraCard2 = document.getElementById('extra-card-2');
+
+            // Reset active style states
+            function resetActiveButtons() {
+                [btnGrid, btnCard, btnFullscreen].forEach(btn => {
+                    btn.classList.remove('bg-white', 'text-blue-600', 'shadow-sm');
+                    btn.classList.add('text-gray-500', 'hover:text-gray-800');
+                });
+            }
+
+            function setActiveButton(btn) {
+                resetActiveButtons();
+                btn.classList.add('bg-white', 'text-blue-600', 'shadow-sm');
+                btn.classList.remove('text-gray-500', 'hover:text-gray-800');
+            }
+
+            // Standardize resetting layout states
+            function clearLayoutStates() {
+                // Exit Grid mode
+                gridContainer.classList.remove('lg:grid-cols-3');
+                gridContainer.classList.add('grid-cols-1');
+                extraCard1.classList.add('hidden');
+                extraCard2.classList.add('hidden');
+                layoutWrapper.classList.remove('max-w-6xl');
+                layoutWrapper.classList.add('max-w-4xl');
+
+                // Exit Fullscreen mode
+                chartCard.classList.remove('fixed', 'inset-0', 'z-50', 'w-screen', 'h-screen', 'p-12', 'rounded-none', 'border-0');
+                chartCard.classList.add('rounded-2xl', 'p-6', 'border');
+                canvasWrapper.classList.remove('h-[calc(100vh-180px)]');
+                canvasWrapper.classList.add('h-[250px]');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            // 1. Grid Mode
+            btnGrid.addEventListener('click', () => {
+                clearLayoutStates();
+                setActiveButton(btnGrid);
+
+                // Apply Grid settings
+                layoutWrapper.classList.remove('max-w-4xl');
+                layoutWrapper.classList.add('max-w-6xl');
+                gridContainer.classList.remove('grid-cols-1');
+                gridContainer.classList.add('lg:grid-cols-3');
+
+                extraCard1.classList.remove('hidden');
+                extraCard2.classList.remove('hidden');
+
+                // Recalculate dimensions
+                setTimeout(() => ageChart.resize(), 150);
+            });
+
+            // 2. Centered Card Mode (Default)
+            btnCard.addEventListener('click', () => {
+                clearLayoutStates();
+                setActiveButton(btnCard);
+
+                setTimeout(() => ageChart.resize(), 150);
+            });
+
+            // 3. Full Screen Mode
+            function triggerFullscreen() {
+                clearLayoutStates();
+                setActiveButton(btnFullscreen);
+
+                // Make card cover the screen
+                chartCard.classList.remove('rounded-2xl', 'p-6', 'border');
+                chartCard.classList.add('fixed', 'inset-0', 'z-50', 'w-screen', 'h-screen', 'p-12', 'rounded-none', 'border-0');
+                
+                // Let canvas occupy full height minus header & footer space
+                canvasWrapper.classList.remove('h-[250px]');
+                canvasWrapper.classList.add('h-[calc(100vh-180px)]');
+                document.body.classList.add('overflow-hidden');
+
+                setTimeout(() => ageChart.resize(), 150);
+            }
+
+            btnFullscreen.addEventListener('click', triggerFullscreen);
+            cardExpand.addEventListener('click', () => {
+                if (chartCard.classList.contains('fixed')) {
+                    // Go back to standard card mode
+                    btnCard.click();
+                } else {
+                    triggerFullscreen();
+                }
+            });
+
+            // Close fullscreen on ESC keypress
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && chartCard.classList.contains('fixed')) {
+                    btnCard.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

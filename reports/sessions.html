@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="bg-[#d3cfcf] min-h-screen  " dir="rtl">
+      <section class="py-2 bg-green h-screen md:flex flex-col gap-6 w-[240px] -right-full md:right-0  fixed top-0 bottom-0  overflow-y-auto sidebar  transition-all duration-300 ease z-20 ">
+
+
+         <div class="closeSide hover:scale-110 duration-300 ease p-2 bg=-white w-8 flex items-center cursor-pointer justify-center h-8 rounded-full  bg-white transition-colors  ease border hover:text-selected-green text-green absolute  font-bold left-2 top-2 md:hidden">
+       <span class="material-symbols-outlined">close</span>
+       </div>
+<h1 class="text-[#CAE5DE] text-5xl text-center ">تحرر</h1>
+
+
+<ul class="font-tajawal-med flex flex-col gap-4  pt-6 md:pt-0 ">
+  <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer bg-selected-green  p-4 text-[18px]">
+    <span class="material-symbols-outlined text-green">grid_view</span>
+   <a href="main-page.html"> الرئيسية</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">group</span>
+   <a href="../customerMangement/main-customer.html"> ادارة العملاء</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">badge</span>
+   <a href="../SpecialistsManagment/main-specealist.html"> ادارة الأخصائيين</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+   <span class="material-symbols-outlined">reviews</span>
+  <a href="../sessions/main-session.html"> الجلسات</a>
+  </li>
+  <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">loyalty</span>
+   برامج الدعم
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 submenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html">البرامج العلاجية</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">الدورات</a> 
+  
+  </div>
+
+
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">اللقاءات</div>
+</div>
+
+
+</li>
+
+
+
+
+
+
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+ <span class="material-symbols-outlined">bar_chart</span>
+التقارير والاحصائيات
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">forum</span>
+    ادارة المحادثات
+  </li>
+
+
+
+
+    <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 notifications">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">notifications</span>
+  الاشعارات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease nArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 nSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html"> اشعارات النظام</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">ارسال اشعارات</a> 
+  
+  </div>
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 pages">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">edit_square</span>
+  الصفحات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease pArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 pSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../pages/mostAsked.html">  الاسئلة الاكثر تداولا</a>
+
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../pages/rules.html">الشروط و الأحكام </a> 
+  
+  </div>
+
+
+
+
+
+</li>
+  
+
+   
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">settings</span>
+الاعدادات
+  </li>
+
+    <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+<span class="material-symbols-outlined">logout</span>
+تسجيل الخروج
+  </li>
+</ul>
+
+
+    </section>
+
+  <main class="flex md:pr-[240px] " >
+
+
+
+
+
+
+
+    <section class=" bg-main-bg min-h-screen w-full  ">
+<div class="flex items-center gap-2 px-7.5 py-5 w-full ">
+      <button class="md:hidden p-3 bg-green rounded-xl  cursor-pointer  hover:bg-[#075E] active:scale-90 transition-[color_transform] menu-btn">  <span class="material-symbols-outlined text-white">
+  menu
+</span></button>
+<div class="flex md:gap-4  items-center justify-between w-full ">
+
+
+<div class="relative  search-wrapper md:w-full "><input type="text" class="scale-0 
+  md:scale-100 origin-right transition-transform duration-300 rounded-2xl px-9  py-3.5 bg-white text-[#86909C] md:max-w-[40rem] md:w-full  border-2 border-gray-400 w-0 placeholder:text-[#86909C] placeholder:font-tajawal-med text-[14px] lg:text-[18px]" placeholder="إبحث عن أي شيء داخل المنصة">
+
+
+<span class="material-symbols-outlined absolute top-1/2 -translate-y-1/2 md:right-3 right-0 text-xl cursor-pointer searchIcon transition-all duration-300 ease">
+  search
+</span>
+
+</div>
+<div class="flex items-center gap-4 leftSide md:flex shrink-0 relative">
+  <div class=" rounded-lg flex items-center justify-center lg:-right-px lg:p-3 sm:p-2 p-1 border-2 border-[#CCCCCC] relative bg-white "><img src="../images/notification.svg" alt="" class="lg:w-7 lg:h-7 h-6 w-6">
+  <div class="bg-notification-red rounded-full text-white text-[10px] lg:text-[12px] font-tajawal-med  absolute top-[-1px] right-1 lg:right-2 px-[3px] lg:top-[6px]">12</div>
+  </div>
+  <div class="  whitespace-nowrap flex items-center"><img src="../images/Ellipse 5.svg" alt="" class="lg:w-[52px] 
+  lg:h-[52px] h-8 w-8 sm:w-11 sm:h-11"></div>
+  <div class="text-[12px] sm:text-[14px] lg:text-[16px]">مرحبا<br> أيوب</div>
+<button class=  "">
+  <span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow cursor-pointer optionsArrow p-0.5 rounded-full">
+  chevron_right
+</span>
+
+
+</button>
+
+
+
+<div class=" absolute left-0 top-full right-0 z-40 min-w-[170px] px-3 py-1.5 text-[12px] md:text-[14px]  font-tajawal-med divide-y divide-[#E5E6EB]  text-pass-gray rounded-md bg-white options scale-0 transition-transform duration-300 ease">
+  <div class="flex items-center gap-6 py-2  cursor-pointer ">
+    <div>
+      <a href="../personalAccounts/personalAccount.html">الحساب الشخصي</a>
+    </div>
+  <span class="material-symbols-outlined w-[20px] h-[20px] text-[20px] flex items-center justify-center">
+  account_circle
+</span>
+  </div>  
+  <div class="flex items-center gap-6 py-2 ">
+    <div>تسجيل الخروج</div>
+ <div><span class="material-symbols-outlined">logout</span></div>
+  </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="h-[1px] w-full bg-gray-400"></div>
+
+
+
+
+<section class="px-7.5 py-5 grid gap-2.5 ">
+
+  
+
+  <div class="flex gap-2">
+      <img src="../images/chart.svg" alt="">
+      <div class="text-green font-tajawal-med text-2xl ">اضافة برامج</div>
+
+  </div>
+  <div class="font-tajawal-med text-[#86909C] ">
+      استعراض كافة التقارير والاحصائيات
+  </div>
+<div class="w-full bg-[#E5D6DB] h-px"></div>
+</section>
+
+<section>
+ <div class="px-7.5 ">
+   <div class="flex w-full justify-between sm:items-center flex-col sm:flex-row gap-3">
+    <div class="flex gap-2 items-center">
+      <div class="flex items-center gap-0.5">
+        <img src="../images/calendar-2.svg" alt="">
+        <div class="text-[#4E5969] font-tajawal-med">تاريخ التقرير</div>
+      </div>
+
+      <div class="border rounded-md border-gray-400/70 px-4 py-2 flex items-center justify-between font-tajawal-med text-[#86909C] gap-4 shadow ">
+        <div> 1 يونيو 2025 - 30 يونيو 2025</div>
+
+        <div>
+
+<img src="../images/arrow-up.svg" alt="" class="rotate-90">
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="flex gap-2 w-fit rounded-lg bg-[#E5E6EB] text-[#86909C] px-4 py-2.5">
+      <img src="../images/import.svg" alt="">
+      <div>تصدير البيانات</div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="py-5">
+    <div class="border rounded-2xl border-[#E5E6EB] py-5 px-5 grid gap-2  ">
+
+    <h1 class="font-tajawal-bold text-green">نوع التقرير</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4  justify-between items-center  " >
+
+       <button class="w-full rounded-xl border-[#E5E6EB] text-[#86909C] bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/money-recive.svg" alt="">
+        الارباح
+      </button>
+      <button class="w-full rounded-xl border-[#E5E6EB] text-[#86909C] bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/message-favorite.svg" alt="">
+        العملاء
+      </button>
+
+       <button class="w-full rounded-xl border-[#E5E6EB] text-[#86909C] bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/message-favorite.svg" alt="">
+        الاخصائيين
+      </button>
+        <button class="w-full rounded-xl border-[#81C6C3] text-green bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/people (2).svg" alt="">
+      الجلسات
+      </button>
+         <button class="w-full rounded-xl border-[#E5E6EB] text-[#86909C] bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/video-square.svg" alt="">
+        الدورات
+      </button>
+
+        <button class="w-full rounded-xl border-[#E5E6EB] text-[#86909C] bg-white border flex items-center justify-center font-tajawal-med py-2.5" >
+        <img src="../images/podcast- 1.svg" alt="">
+        اللقاءات
+      </button>
+  
+  
+      
+
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+<div class=" w-full p-3.5 grid gap-2 border border-[#CCCCCC] text-pass-gray rounded-lg shadow bg-white">
+
+  
+    <div> عدد الجلسات الكلي </div>
+ 
+  <div class="font-tajawal-med text-[18px] text-label-black">
+   1234 جلسة
+  </div>
+
+</div>
+
+<div class="w-full p-3.5 grid gap-2 border border-[#CCCCCC] text-pass-gray rounded-lg shadow bg-white">
+
+  
+     <div> عدد الجلسات المكتملة</div>
+ 
+  <div class="font-tajawal-med text-[18px] text-label-black">
+   354 جلسة
+  </div>
+
+</div>
+<div class="w-full p-3.5 grid gap-2 border border-[#CCCCCC] text-pass-gray rounded-lg shadow bg-white">
+
+  
+     <div> عدد الجلسات الملغاة الموقوفين</div>
+ 
+  <div class="font-tajawal-med text-[18px] text-label-black">
+   125 جلسة
+  </div>
+
+</div>
+<div class="w-full p-3.5 grid gap-2 border border-[#CCCCCC] text-pass-gray rounded-lg shadow bg-white">
+
+  
+     <div> عدد الجلسات قيد التنفيذ</div>
+ 
+  <div class="font-tajawal-med text-[18px] text-label-black">
+15 جلسة
+  </div>
+
+</div>
+
+
+  </div>
+
+
+
+  <div class="py-5 grid grid-cols-1 lg:grid-cols-2 items-center gap-7 px-4">
+
+
+      <div class="grid gap-4 ">
+      <h1 class="font-tajawal-bold  text-xl text-[#86909C]"> انواع الجلسات</h1>
+      <div class="rounded-2xl  gap-10  grid grid-cols-2  ">
+      <div class="flex justify-center items-center">  <img src="../images/Donut Chart.png" alt="">
+</div>
+<table class="w-full"><tr class="border-b border-b-gray-40 w-full">
+  <th class="text-[#86909C] font-tajawal-med text-[14px] ">نوع الجلسة</th>
+  <th class="text-[#86909C] font-tajawal-med text-[14px] ">العدد</th>
+
+  <th class="text-[#86909C] font-tajawal-med text-[14px] ">النسبة </th>
+
+</tr>
+
+<tr>
+  <td>
+    <div class="flex items-center gap-1.5">
+      <div class="w-[14px] h-[14px] rounded-full bg-[#83D0A2]"></div>
+      صوتية
+    </div>
+  </td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">43</td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">28.6%</td>
+
+</tr>
+<tr>
+  <td>
+    <div class="flex items-center gap-1.5">
+      <div class="w-[14px] h-[14px] rounded-full bg-[#3491FA]"></div>
+      صوتية
+    </div>
+  </td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">43</td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">28.6%</td>
+
+</tr>
+<tr>
+  <td>
+    <div class="flex items-center gap-1.5">
+      <div class="w-[14px] h-[14px] rounded-full bg-[#0FC6C2] "></div>
+      صوتية
+    </div>
+  </td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">43</td>
+  <td class="group-indeterminate: text-[14px] text[#0A0A0A] ">28.6%</td>
+
+</tr>
+</table>
+      
+
+
+
+      
+
+      </div> 
+</div>
+
+
+
+<div class="grid  gap-4">
+
+   <h1 class="font-tajawal-bold  text-xl text-[#86909C]"> متوسط مدة الجلسة </h1>
+   <div class="grid items-center justify-center gap-4 ">
+
+    <div class="w-full flex items-center justify-center">
+      <img src="../images/Chart-container (1).svg" alt="" >
+      
+    </div>
+    <div class="flex items-center justify-center gap-3">
+<div class="flex items-center gap-1">
+  <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">30 دقيقة</div>
+</div>
+
+<div class="flex items-center gap-1">
+  <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">45 دقيقة</div>
+</div>
+
+<div class="flex items-center gap-1">
+  <div class="bg-[#57A9FB] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">60 دقيقة</div>
+</div>
+
+<div class="flex items-center gap-1">
+  <div class="bg-[#0FC6C2] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">80 دقيقة</div>
+</div>
+
+    </div></div></div>
+
+
+
+<div class="grid gap-4 ">
+      <h1 class="font-tajawal-bold  text-xl text-[#86909C]"> اكثر الايام شراءا</h1>
+      <div class="rounded-2xl grid gap-3 ">
+             <div class="flex w-full items-center justify-between">
+          <div class="text-label-black font-tajawal-med text-lg"><span class="font-tajawal-bold text-2xl">1548 جلسة </span> </div>
+          <div class="text-[#F53F3F] font-tajawal-med text-xl flex gap-0.5 items-center">21%
+            <img src="../images/arrow-down.svg" alt="">
+          </div>
+        </div>
+
+
+        <div class="flex items-end justify-between w-full p-[25px]">
+             <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[70px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">السبت</div>
+             </div>
+
+
+
+                  <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[144.5px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الاحد</div>
+             </div>
+
+
+
+                     <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[117.5px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الاثنين</div>
+             </div>
+
+
+                     <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[46.7px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الثلاثاء</div>
+             </div>
+
+
+                       <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[103px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الاربعاء</div>
+             </div>
+
+                   <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[70px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الخميس</div>
+             </div>
+
+                   <div class="grid gap-4 items-center">
+                <div class="bg-[#CAE5DE]/50 rounded-[10px] w-[20px] h-[178px]  grid items-end">
+                  <div class="bg-[#81C6C3] w-full h-[47px] rounded-[10px]"></div>
+                </div>
+                <div class="text-[12px] font-tajawal-regular text-label-black/50">الجمعة</div>
+             </div>
+             
+        
+        </div>
+
+
+        <div>
+
+        </div>
+
+
+
+
+
+    
+</div>
+
+
+
+     
+    </div>
+    
+<div class="grid  gap-4">
+
+   <h1 class="font-tajawal-bold  text-xl text-[#86909C]">توزيع الشراء حسب الوقت</h1>
+   <div class="grid items-center justify-center gap-4 ">
+
+    <div class="w-full flex items-center justify-center">
+      <img src="../images/sessions char.svg" alt="" >
+      
+    </div>
+    <div class="flex items-center justify-center gap-3">
+<div class="flex items-center gap-1">
+  <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">صباحا</div>
+</div>
+
+<div class="flex items-center gap-1">
+  <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">ظهرا</div>
+</div>
+
+<div class="flex items-center gap-1">
+  <div class="bg-[#57A9FB] w-3 h-3 rounded-full"></div>
+  <div class="font-tajawal-regular text-label-black">مساءا</div>
+</div>
+
+
+
+    </div></div></div>
+
+
+  
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+       <div class="py-5">
+
+          <div class="grid gap-4 ">
+      <h1 class="font-tajawal-bold  text-xl text-[#86909C] px-2">اكثر الاقسام شراءا</h1>
+      <div class="rounded-2xl grid gap-3 ">
+
+    
+       <div class="grid gap-3 items-center lg:grid-cols-3  px-4">
+        <div class="flex items-center justify-center"><img src="../images/Chart Area (2).svgvg" alt=""></div>
+
+
+        <table class="w-full">
+          <tr class="font-tajawal-med text-[14px] text-[#86909C] border-b">
+            <th class="text-start px-3 py-2">اسم القسم</th>
+            <th class="text-start px-3 py-2">عدد الجلسات</th>
+            <th class="text-start px-3 py-2"> % النسبة</th>
+          </tr>
+      <tbody class="font-tajawal-med text-[14px] text-label-black">
+        <tr>
+          <td class="py-2 px-2 font-tajawal-regular ">
+           <div class="flex items-center gap-2 ">
+             <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+             استشارة سريعة
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+             <tr class="font-tajawal-med" >
+          <td class="py-2 px-2 font-tajawal-regular">
+           <div class="flex items-center gap-2">
+             <div class="bg-[#3491FA] w-3 h-3 rounded-full"></div>
+             نمط الحياة
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+             <tr class="font-tajawal-med">
+          <td class="py-2 px-2 font-tajawal-regular">
+           <div class="flex items-center gap-2">
+             <div class="bg-[#83D0A2] w-3 h-3 rounded-full"></div>
+             رعاية الاطفال <br> والمراهقبن
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+         
+       </tbody>
+        </table>
+
+
+
+       <table class="w-full">
+          <tr class="font-tajawal-med text-[14px] text-[#86909C] border-b">
+            <th class="text-start px-3 py-2">اسم الدورة</th>
+            <th class="text-start px-3 py-2">عدد الجلسات</th>
+            <th class="text-start px-3 py-2"> % النسبة</th>
+          </tr>
+      <tbody class="font-tajawal-med text-[14px] text-label-black">
+        <tr>
+          <td class="py-2 px-2 font-tajawal-regular ">
+           <div class="flex items-center gap-2 ">
+             <div class="bg-[#F76560] w-3 h-3 rounded-full"></div>
+          دعم العلاقات <br>الاسرية
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+             <tr class="font-tajawal-med" >
+          <td class="py-2 px-2 font-tajawal-regular">
+           <div class="flex items-center gap-2">
+             <div class="bg-[#F7BA1E] w-3 h-3 rounded-full"></div>
+       العلاج الغذائي
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+             <tr class="font-tajawal-med">
+          <td class="py-2 px-2 font-tajawal-regular">
+           <div class="flex items-center gap-2">
+             <div class="bg-[#722ED1] w-3 h-3 rounded-full"></div>
+            العلاج النفسي<br> المتكامل
+           </div>
+          </td>
+
+          <td class="py-2 px-2">43</td>
+          <td class="py-2 px-2">28.6%</td>
+        </tr>
+
+
+         
+       </tbody>
+        </table>
+
+
+
+       </div>
+         
+  
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="grid gap-3">
+        <h1 class="font-tajawal-bold  text-xl text-[#86909C] px-2">اكثر الايام شراءا</h1>
+        <div class="grid gap-3 w-full rounded-xl shadow p-5">
+           <div class="flex w-full items-center justify-between">
+          <div class="text-label-black font-tajawal-med text-lg"><span class="font-tajawal-bold text-2xl">1548 جلسة </span> </div>
+          <div class="text-[#F53F3F] font-tajawal-med text-xl flex gap-0.5 items-center">21%
+            <img src="../images/arrow-down.svg" alt="">
+          </div>
+        </div>
+        <div class="w-full">
+          <img src="../images/card-body.svg" alt="" class="w-full h-auto">
+        </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="py-5 grid gap-3">
+      <h1 class="font-tajawal-bold text-xl text-[#86909C] px-4"> اكثر الاخصائيين نشاطا في الجلسات</h1>
+      <table class="border border-gray-300 rounded-b-xl border-collapse ">
+        <thead>
+         <th class="font-tajawal-med text-label-black text-start py-2  px-4">
+          الاسم
+         </th> 
+          <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+          تاريخ الانضمام
+         </th>
+         
+            <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+      التخصص
+         </th>
+
+          <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+        عدد الجلسات المنفذة
+         </th>  
+             <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+          الحالة
+         </th>
+          <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+          الارباح
+         </th> 
+  <th class="font-tajawal-med text-label-black text-start py-2 px-4 ">
+          متوسط التقييم
+        </th> 
+        </thead>
+        <tbody class="divide-y divide-gray-400 font-tajawal-regular">
+          <tr >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+            <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit"></div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+
+            <tr >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+            <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit px-3.5 py-1">نشط</div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+
+            <tr class="" >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+             <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit px-3.5 py-1">نشط</div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+
+            <tr >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+            <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit px-3.5 py-1">نشط</div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+
+            <tr >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+            <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit px-3.5 py-1">نشط</div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+
+            <tr >
+            <td class="p-5">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full "><img src="../images/Frame 1300193088 (1).svg" alt=""></div>
+                <div  class="text-green font-tajawal-regular">هاشم ناجي</div>
+              </div>
+            </td>
+            <td class="text-label-black p-5">24/12/2024</td>
+            <td class="text-label-black p-5">أخصائي نفسي</td>
+            <td class="text-label-black p-5"> 125 جلسة</td>
+            <td class="p-5">
+              <div class="bg-[#E8FFEA] text-[#00B42A] rounded-full font-tajawal-med w-fit px-3.5 py-1">نشط</div>
+            </td>
+            <td class="text-label-black p-5">1258ر.س</td>
+            <td class="text-green p-5">4 نجوم</td>
+            
+
+            
+        
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+
+     
+   
+
+
+
+
+
+
+
+
+  
+  </div>
+
+
+
+  </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+</section>
+
+</section></main>
+
+
+<script>let support = document.querySelector(".support");
+      let arrow = document.querySelector(".arrow");
+      let submenu = document.querySelector(".submenu");
+      let nArrow = document.querySelector(".nArrow");
+      let nSubmenu = document.querySelector(".nSubmenu");
+      let pArrow = document.querySelector(".pArrow");
+      let pSubmenu = document.querySelector(".pSubmenu");
+      let menu = document.querySelector(".menu-btn");
+      let sideBar = document.querySelector(".sidebar");
+      let close = document.querySelector(".closeSide");
+      let left = document.querySelector(".leftSide");
+      let optionsArrow = document.querySelector(".optionsArrow");
+      let searchIcon = document.querySelector(".searchIcon");
+      let wrapper = document.querySelector(".search-wrapper");
+      let options = document.querySelector(".options");
+      let notifications = document.querySelector(".notifications");
+      let pages = document.querySelector(".pages");
+
+      optionsArrow.addEventListener("click", () => {
+        optionsArrow.classList.toggle("bg-gray-400");
+        options.classList.toggle("scale-100");
+      });
+
+      searchIcon.addEventListener("click", () => {
+        wrapper.querySelector("input").classList.toggle("scale-100");
+        wrapper.querySelector("input").classList.toggle("w-full");
+        wrapper.querySelector("input").classList.toggle("w-0");
+
+        searchIcon.classList.toggle("right-3");
+        wrapper.classList.toggle("w-full");
+        left.classList.toggle("hidden");
+      });
+      close.addEventListener("click", (e) => {
+        sideBar.classList.add("-right-full");
+        sideBar.classList.remove("right-0");
+      });
+      menu.addEventListener("click", (e) => {
+        sideBar.classList.replace("-right-full", "right-0");
+      });
+
+      support.addEventListener("click", (e) => {
+        support.classList.toggle("bg-selected-green");
+        arrow.classList.toggle("rotate-[270deg]");
+        submenu.classList.toggle("hidden");
+        submenu.classList.toggle("grid");
+        submenu.classList.toggle("translate-y-0");
+        submenu.classList.toggle("-translate-y-50");
+        submenu.classList.toggle("opacity-100");
+      });
+
+      pages.addEventListener("click", (e) => {
+        pages.classList.toggle("bg-selected-green");
+        pArrow.classList.toggle("rotate-[270deg]");
+        pSubmenu.classList.toggle("hidden");
+        pSubmenu.classList.toggle("grid");
+        pSubmenu.classList.toggle("translate-y-0");
+        pSubmenu.classList.toggle("-translate-y-50");
+        pSubmenu.classList.toggle("opacity-100");
+      });
+
+      notifications.addEventListener("click", (e) => {
+        notifications.classList.toggle("bg-selected-green");
+        nArrow.classList.toggle("rotate-[270deg]");
+        nSubmenu.classList.toggle("hidden");
+        nSubmenu.classList.toggle("grid");
+        nSubmenu.classList.toggle("translate-y-0");
+        nSubmenu.classList.toggle("-translate-y-50");
+        nSubmenu.classList.toggle("opacity-100");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!pages.contains(e.target)) {
+          pages.classList.remove("bg-selected-green");
+          pArrow.classList.remove("rotate-[270deg]");
+          pSubmenu.classList.add("hidden");
+          pSubmenu.classList.remove("grid");
+          pSubmenu.classList.remove("translate-y-0");
+          pSubmenu.classList.remove("-translate-y-50");
+          pSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!notifications.contains(e.target)) {
+          notifications.classList.remove("bg-selected-green");
+          nArrow.classList.remove("rotate-[270deg]");
+          nSubmenu.classList.add("hidden");
+          nSubmenu.classList.remove("grid");
+          nSubmenu.classList.remove("translate-y-0");
+          nSubmenu.classList.remove("-translate-y-50");
+          nSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!support.contains(e.target)) {
+          support.classList.remove("bg-selected-green");
+          arrow.classList.remove("rotate-[270deg]");
+          submenu.classList.add("hidden");
+          submenu.classList.remove("grid");
+          submenu.classList.remove("translate-y-0");
+          submenu.classList.remove("-translate-y-50");
+          submenu.classList.remove("opacity-100");
+        }
+      });
+  </script>
+</body></html>
+
+
+
+<!-- for paddings up and down you can put half ot them of each new tag -->

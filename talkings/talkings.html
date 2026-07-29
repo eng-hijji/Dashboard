@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+<body class="bg-[#d3cfcf] min-h-screen  " dir="rtl">
+      <section class="py-2 bg-green h-screen md:flex flex-col gap-6 w-[240px] -right-full md:right-0  fixed top-0 bottom-0  overflow-y-auto sidebar  transition-all duration-300 ease z-20 ">
+
+
+         <div class="closeSide hover:scale-110 duration-300 ease p-2 bg=-white w-8 flex items-center cursor-pointer justify-center h-8 rounded-full  bg-white transition-colors  ease border hover:text-selected-green text-green absolute  font-bold left-2 top-2 md:hidden">
+       <span class="material-symbols-outlined">close</span>
+       </div>
+<h1 class="text-[#CAE5DE] text-5xl text-center ">تحرر</h1>
+
+
+<ul class="font-tajawal-med flex flex-col gap-4  pt-6 md:pt-0 ">
+  <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer bg-selected-green  p-4 text-[18px]">
+    <span class="material-symbols-outlined text-green">grid_view</span>
+   <a href="main-page.html"> الرئيسية</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">group</span>
+   <a href="../customerMangement/main-customer.html"> ادارة العملاء</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">badge</span>
+   <a href="../SpecialistsManagment/main-specealist.html"> ادارة الأخصائيين</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+   <span class="material-symbols-outlined">reviews</span>
+  <a href="../sessions/main-session.html"> الجلسات</a>
+  </li>
+  <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">loyalty</span>
+   برامج الدعم
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 submenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html">البرامج العلاجية</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">الدورات</a> 
+  
+  </div>
+
+
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">اللقاءات</div>
+</div>
+
+
+</li>
+
+
+
+
+
+
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+ <span class="material-symbols-outlined">bar_chart</span>
+التقارير والاحصائيات
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">forum</span>
+    ادارة المحادثات
+  </li>
+
+
+
+
+    <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 notifications">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">notifications</span>
+  الاشعارات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease nArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 nSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html"> اشعارات النظام</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">ارسال اشعارات</a> 
+  
+  </div>
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 pages">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">edit_square</span>
+  الصفحات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease pArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 pSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../pages/mostAsked.html">  الاسئلة الاكثر تداولا</a>
+
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../pages/rules.html">الشروط و الأحكام </a> 
+  
+  </div>
+
+
+
+
+
+</li>
+  
+
+   
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">settings</span>
+الاعدادات
+  </li>
+
+    <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+<span class="material-symbols-outlined">logout</span>
+تسجيل الخروج
+  </li>
+</ul>
+
+
+    </section>
+
+  <main class="flex md:pr-[240px] " >
+
+
+
+
+
+
+
+    <section class=" bg-main-bg min-h-screen w-full  ">
+<div class="flex items-center gap-2 px-7.5 py-5 w-full ">
+      <button class="md:hidden p-3 bg-green rounded-xl  cursor-pointer  hover:bg-[#075E] active:scale-90 transition-[color_transform] menu-btn">  <span class="material-symbols-outlined text-white">
+  menu
+</span></button>
+<div class="flex md:gap-4  items-center justify-between w-full ">
+
+
+<div class="relative  search-wrapper md:w-full "><input type="text" class="scale-0 
+  md:scale-100 origin-right transition-transform duration-300 rounded-2xl px-9  py-3.5 bg-white text-[#86909C] md:max-w-[40rem] md:w-full  border-2 border-gray-400 w-0 placeholder:text-[#86909C] placeholder:font-tajawal-med text-[14px] lg:text-[18px]" placeholder="إبحث عن أي شيء داخل المنصة">
+
+
+<span class="material-symbols-outlined absolute top-1/2 -translate-y-1/2 md:right-3 right-0 text-xl cursor-pointer searchIcon transition-all duration-300 ease">
+  search
+</span>
+
+</div>
+<div class="flex items-center gap-4 leftSide md:flex shrink-0 relative">
+  <div class=" rounded-lg flex items-center justify-center lg:-right-px lg:p-3 sm:p-2 p-1 border-2 border-[#CCCCCC] relative bg-white "><img src="../images/notification.svg" alt="" class="lg:w-7 lg:h-7 h-6 w-6">
+  <div class="bg-notification-red rounded-full text-white text-[10px] lg:text-[12px] font-tajawal-med  absolute top-[-1px] right-1 lg:right-2 px-[3px] lg:top-[6px]">12</div>
+  </div>
+  <div class="  whitespace-nowrap flex items-center"><img src="../images/Ellipse 5.svg" alt="" class="lg:w-[52px] 
+  lg:h-[52px] h-8 w-8 sm:w-11 sm:h-11"></div>
+  <div class="text-[12px] sm:text-[14px] lg:text-[16px]">مرحبا<br> أيوب</div>
+<button class=  "">
+  <span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow cursor-pointer optionsArrow p-0.5 rounded-full">
+  chevron_right
+</span>
+
+
+</button>
+
+
+
+<div class=" absolute left-0 top-full right-0 z-40 min-w-[170px] px-3 py-1.5 text-[12px] md:text-[14px]  font-tajawal-med divide-y divide-[#E5E6EB]  text-pass-gray rounded-md bg-white options scale-0 transition-transform duration-300 ease">
+  <div class="flex items-center gap-6 py-2  cursor-pointer ">
+    <div>
+      <a href="../personalAccounts/personalAccount.html">الحساب الشخصي</a>
+    </div>
+  <span class="material-symbols-outlined w-[20px] h-[20px] text-[20px] flex items-center justify-center">
+  account_circle
+</span>
+  </div>  
+  <div class="flex items-center gap-6 py-2 ">
+    <div>تسجيل الخروج</div>
+ <div><span class="material-symbols-outlined">logout</span></div>
+  </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="h-[1px] w-full bg-gray-400"></div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="px-7.5 py-3">
+          <div class="grid gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="../images/people (2).svg" alt="" class="w-7 h7" />
+              <div class="font-tajawal-med text-2xl text-green">
+                تفاصيل المحادثة
+              </div>
+            </div>
+            <div class="font-tajawal-med text-[#86909C]">
+              إستعراض كافة المحادثات
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-[#E5E6EB]"></div>
+
+          <div
+            class="py-3 grid grid-cols-1 gap-7.5 items-start lg:grid-cols-[1fr_280px] w-full"
+          >
+            <div
+              class="border rounded-xl bg-white border-[#C9CDD4] w-full max-h-screen overflow-auto"
+            >
+              <div class="grid gap-2 p-3">
+                <h1 class="font-tajawal-bold text-[#202224] text-xl">
+                  محادثة رقم#001
+                </h1>
+                <div class="font-tajawal-regular text-label-black">
+                  بين العميل
+                  <span class="font-tajawal-med text-green">
+                    ( سارة محمد )</span
+                  >
+
+                  و الأخصائي
+
+                  <span class="font-tajawal-med text-green"
+                    >( د.أحمد حسين )</span
+                  >
+                </div>
+              </div>
+
+              <div class="w-full h-px bg-[#C9CDD4]"></div>
+
+              <div class="p-3 flex items-center gap-1">
+                <div>
+                  <img
+                    src="../images/Frame 21017.svg"
+                    alt=""
+                    class="w-[46px] h-[46px]"
+                  />
+                </div>
+                <div class="grid gap-1">
+                  <div
+                    class="font-tajawal-regular text-[12px] text-label-black"
+                  >
+                    . سارة محمد
+                    <span class="text-[#86909C]">العميل</span>
+                  </div>
+                  <div class="p-4 bg-[#F9FAFB] grid gap-1 max-w-[80%]">
+                    <div class="text-label-black font-tajawal-med">
+                      السلام عليكم دكتور، أنا اليوم حاسة بقلق شديد بدون سبب
+                      واضح، وكل تفكيري مشتت.
+                    </div>
+                    <div
+                      class="font-tajawal-regular text-[12px] text-[#86909C] flex items-center gap-0.5"
+                    >
+                      <img src="../images/Group.svg" alt="" class="w-4 h-2" />
+                      7:02 م
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex w-full justify-end p-3">
+                '
+                <div class="flex gap-1 items-end">
+                  <div class="grid gap-1 justify-end items-end">
+                    <div
+                      class="font-tajawal-regular text-[12px] text-label-black mr-auto"
+                    >
+                      د.احمد حسين .
+                      <span class="text-[#86909C]">اخصائي نفسي</span>
+                    </div>
+                    <div
+                      class="p-4 grid gap-0.5 bg-[#E8FFFB] rounded-xl text-label-black"
+                    >
+                      <div>
+                        وعليكم السلام يا سارة، أهلًا فيك 🌸<br />
+                        حابب أبدأ معك بسؤال بسيط: متى بدأ هالشعور؟ وهل في شي
+                        معين صار قبلها بيوم أو يومين؟
+                      </div>
+                      <div
+                        class="flex gap-0.5 items-center self-end text-[#86909C] text-[12px] mr-auto"
+                      >
+                        7.03 م
+                        <img src="../images/Group.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="..//images/Frame 21017 (1).svg"
+                      alt=""
+                      class="w-[46px] h-[46px]"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 flex items-center gap-1">
+                <div>
+                  <img
+                    src="../images/Frame 21017.svg"
+                    alt=""
+                    class="w-[46px] h-[46px]"
+                  />
+                </div>
+                <div class="grid gap-1">
+                  <div
+                    class="font-tajawal-regular text-[12px] text-label-black"
+                  >
+                    . سارة محمد
+                    <span class="text-[#86909C]">العميل</span>
+                  </div>
+                  <div class="p-4 bg-[#F9FAFB] grid gap-1 max-w-[80%]">
+                    <div class="text-label-black font-tajawal-med">
+                      السلام عليكم دكتور، أنا اليوم حاسة بقلق شديد بدون سبب
+                      واضح، وكل تفكيري مشتت.
+                    </div>
+                    <div
+                      class="font-tajawal-regular text-[12px] text-[#86909C] flex items-center gap-0.5"
+                    >
+                      <img src="../images/Group.svg" alt="" class="w-4 h-2" />
+                      7:02 م
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex w-full justify-end p-3">
+                '
+                <div class="flex gap-1 items-end">
+                  <div class="grid gap-1 justify-end items-end">
+                    <div
+                      class="font-tajawal-regular text-[12px] text-label-black mr-auto"
+                    >
+                      د.احمد حسين .
+                      <span class="text-[#86909C]">اخصائي نفسي</span>
+                    </div>
+                    <div
+                      class="p-4 grid gap-0.5 bg-[#E8FFFB] rounded-xl text-label-black"
+                    >
+                      <div>
+                        وعليكم السلام يا سارة، أهلًا فيك 🌸<br />
+                        حابب أبدأ معك بسؤال بسيط: متى بدأ هالشعور؟ وهل في شي
+                        معين صار قبلها بيوم أو يومين؟
+                      </div>
+                      <div
+                        class="flex gap-0.5 items-center self-end text-[#86909C] text-[12px] mr-auto"
+                      >
+                        7.03 م
+                        <img src="../images/Group.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="..//images/Frame 21017 (1).svg"
+                      alt=""
+                      class="w-[46px] h-[46px]"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 flex items-center gap-1">
+                <div>
+                  <img
+                    src="../images/Frame 21017.svg"
+                    alt=""
+                    class="w-[46px] h-[46px]"
+                  />
+                </div>
+                <div class="grid gap-1">
+                  <div
+                    class="font-tajawal-regular text-[12px] text-label-black"
+                  >
+                    . سارة محمد
+                    <span class="text-[#86909C]">العميل</span>
+                  </div>
+                  <div class="p-4 bg-[#F9FAFB] grid gap-1 max-w-[80%]">
+                    <div class="text-label-black font-tajawal-med">
+                      السلام عليكم دكتور، أنا اليوم حاسة بقلق شديد بدون سبب
+                      واضح، وكل تفكيري مشتت.
+                    </div>
+                    <div
+                      class="font-tajawal-regular text-[12px] text-[#86909C] flex items-center gap-0.5"
+                    >
+                      <img src="../images/Group.svg" alt="" class="w-4 h-2" />
+                      7:02 م
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full justify-end p-3">
+                '
+                <div class="flex gap-1 items-end">
+                  <div class="grid gap-1 justify-end items-end">
+                    <div
+                      class="font-tajawal-regular text-[12px] text-label-black mr-auto"
+                    >
+                      د.احمد حسين .
+                      <span class="text-[#86909C]">اخصائي نفسي</span>
+                    </div>
+                    <div
+                      class="p-4 grid gap-0.5 bg-[#E8FFFB] rounded-xl text-label-black"
+                    >
+                      <div>
+                        وعليكم السلام يا سارة، أهلًا فيك 🌸<br />
+                        حابب أبدأ معك بسؤال بسيط: متى بدأ هالشعور؟ وهل في شي
+                        معين صار قبلها بيوم أو يومين؟
+                      </div>
+                      <div
+                        class="flex gap-0.5 items-center self-end text-[#86909C] text-[12px] mr-auto"
+                      >
+                        7.03 م
+                        <img src="../images/Group.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="..//images/Frame 21017 (1).svg"
+                      alt=""
+                      class="w-[46px] h-[46px]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-4 w-fit">
+              <div>
+                <button
+                  class="bg-green text-white px-10 text-center py-2.5 font-tajawal-med text-lg rounded-full flex gap-1 items-center w-full justify-center delete"
+                >
+                  <img src="../images/close-circle.png" alt="" />
+                  حذف المحادثة
+                </button>
+              </div>
+              <div>
+                <button
+                  class="text-green bg-white border border-[#81C6C3] px-10 py-2.5 font-tajawal-med text-lg rounded-full flex items-center gap-1 justify-center send"
+                >
+                  <img src="../images/send.svg" alt="" />
+                  إرسال تنبيه للطرفين
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 transition transition-transform duration-300 translate-y-[-100%] delete-popup"
+    >
+      <div
+        class="max-w-[450px] w-full p-6 gap-3 grid md:gap-6 bg-white rounded-xl"
+      >
+        <div class="flex w-full items-center justify-between gap-3">
+          <div
+            class="flex gap-1 items-center font-tajawal-med md:text-lg text-green"
+          >
+            <img
+              src="../images/green close.png"
+              alt=""
+              class="w-5 h-5 md:h-7 md:w-7"
+            />
+            حذف المحادثة
+          </div>
+          <div>
+            <img
+              src="../images/close-circle.svg"
+              alt=""
+              class="w-7 h-7 closeDelete cursor-pointer"
+            />
+          </div>
+        </div>
+        <div class="flex items-center justify-center p-2">
+          <img
+            src="../images/big red circle.svg"
+            alt=""
+            class="w-[90px] h-[90px]"
+          />
+        </div>
+        <div
+          class="text-center font-tajawal-med text-lg text-label-black text-[16px] md:text-lg"
+        >
+          هل أنت متأكد أنك تريد حذف هذه المحادثة
+        </div>
+        <div
+          class="grid gap-2 grid-cols-[2fr_1fr] items-center w-full font-tajawal-med text-lg"
+        >
+          <button
+            class="bg-green px-4 py-2.5 text-center rounded-lg text-white"
+          >
+            حذف
+          </button>
+          <button
+            class="bg-[#F9FAFB] px-4 py-2.5 text-center rounded-lg text-pass-gray"
+          >
+            إلغاء
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 transition transition-transform duration-300 translate-y-[-100%] send-popup"
+    >
+      <div
+        class="max-w-[450px] w-full p-6 gap-3 grid md:gap-6 bg-white rounded-xl"
+      >
+        <div class="flex w-full items-center justify-between gap-3">
+          <div
+            class="flex gap-1 items-center font-tajawal-med md:text-lg text-green"
+          >
+            <img
+              src="../images/send.svg"
+              alt=""
+              class="w-5 h-5 md:h-7 md:w-7"
+            />
+            ارسال تنبيه للطرفين
+          </div>
+          <div>
+            <img
+              src="../images/close-circle.svg"
+              alt=""
+              class="w-7 h-7 close-send cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <div class="grid gap-2">
+          <label for="notification" class="text-label-black font-tajawal-med"
+            >نص التنبيه</label
+          >
+          <textarea
+            name="notification"
+            id="notification"
+            placeholder="اكتب نص التنبيه ..."
+            class="w-full border border-[#E5E6EB] p-3 max-h-25 h-full"
+          ></textarea>
+        </div>
+        <div
+          class="grid gap-2 grid-cols-[2fr_1fr] items-center w-full font-tajawal-med text-lg"
+        >
+          <button
+            class="bg-green px-4 py-2.5 text-center rounded-lg text-white"
+          >
+            ارسال
+          </button>
+          <button
+            class="bg-[#F9FAFB] px-4 py-2.5 text-center rounded-lg text-pass-gray"
+          >
+            إلغاء
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let pop = document.querySelector(".delete-popup");
+      let send = document.querySelector(".send-popup");
+      let closeSend = document.querySelector(".close-send");
+
+      let deleteBtn = document.querySelector(".delete");
+      let sendBtn = document.querySelector(".send");
+
+      closeSend.addEventListener("click", () => {
+        send.classList.add("translate-y-[-100%]");
+        send.classList.remove("translate-y-0");
+      });
+
+      sendBtn.addEventListener("click", () => {
+        send.classList.remove("translate-y-[-100%]");
+        send.classList.add("translate-y-0");
+      });
+
+      let closeDelete = document.querySelector(".closeDelete");
+      closeDelete.addEventListener("click", () => {
+        pop.classList.add("translate-y-[-100%]");
+        pop.classList.remove("translate-y-0");
+      });
+      deleteBtn.addEventListener("click", () => {
+        pop.classList.remove("translate-y-[-100%]");
+        pop.classList.add("translate-y-0");
+      });
+      let support = document.querySelector(".support");
+      let arrow = document.querySelector(".arrow");
+      let submenu = document.querySelector(".submenu");
+      let nArrow = document.querySelector(".nArrow");
+      let nSubmenu = document.querySelector(".nSubmenu");
+      let pArrow = document.querySelector(".pArrow");
+      let pSubmenu = document.querySelector(".pSubmenu");
+      let menu = document.querySelector(".menu-btn");
+      let sideBar = document.querySelector(".sidebar");
+      let close = document.querySelector(".closeSide");
+      let left = document.querySelector(".leftSide");
+      let optionsArrow = document.querySelector(".optionsArrow");
+      let searchIcon = document.querySelector(".searchIcon");
+      let wrapper = document.querySelector(".search-wrapper");
+      let options = document.querySelector(".options");
+      let notifications = document.querySelector(".notifications");
+      let pages = document.querySelector(".pages");
+
+      optionsArrow.addEventListener("click", () => {
+        optionsArrow.classList.toggle("bg-gray-400");
+        options.classList.toggle("scale-100");
+      });
+
+      searchIcon.addEventListener("click", () => {
+        wrapper.querySelector("input").classList.toggle("scale-100");
+        wrapper.querySelector("input").classList.toggle("w-full");
+        wrapper.querySelector("input").classList.toggle("w-0");
+
+        searchIcon.classList.toggle("right-3");
+        wrapper.classList.toggle("w-full");
+        left.classList.toggle("hidden");
+      });
+      close.addEventListener("click", (e) => {
+        sideBar.classList.add("-right-full");
+        sideBar.classList.remove("right-0");
+      });
+      menu.addEventListener("click", (e) => {
+        sideBar.classList.replace("-right-full", "right-0");
+      });
+
+      support.addEventListener("click", (e) => {
+        support.classList.toggle("bg-selected-green");
+        arrow.classList.toggle("rotate-[270deg]");
+        submenu.classList.toggle("hidden");
+        submenu.classList.toggle("grid");
+        submenu.classList.toggle("translate-y-0");
+        submenu.classList.toggle("-translate-y-50");
+        submenu.classList.toggle("opacity-100");
+      });
+
+      pages.addEventListener("click", (e) => {
+        pages.classList.toggle("bg-selected-green");
+        pArrow.classList.toggle("rotate-[270deg]");
+        pSubmenu.classList.toggle("hidden");
+        pSubmenu.classList.toggle("grid");
+        pSubmenu.classList.toggle("translate-y-0");
+        pSubmenu.classList.toggle("-translate-y-50");
+        pSubmenu.classList.toggle("opacity-100");
+      });
+
+      notifications.addEventListener("click", (e) => {
+        notifications.classList.toggle("bg-selected-green");
+        nArrow.classList.toggle("rotate-[270deg]");
+        nSubmenu.classList.toggle("hidden");
+        nSubmenu.classList.toggle("grid");
+        nSubmenu.classList.toggle("translate-y-0");
+        nSubmenu.classList.toggle("-translate-y-50");
+        nSubmenu.classList.toggle("opacity-100");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!pages.contains(e.target)) {
+          pages.classList.remove("bg-selected-green");
+          pArrow.classList.remove("rotate-[270deg]");
+          pSubmenu.classList.add("hidden");
+          pSubmenu.classList.remove("grid");
+          pSubmenu.classList.remove("translate-y-0");
+          pSubmenu.classList.remove("-translate-y-50");
+          pSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!notifications.contains(e.target)) {
+          notifications.classList.remove("bg-selected-green");
+          nArrow.classList.remove("rotate-[270deg]");
+          nSubmenu.classList.add("hidden");
+          nSubmenu.classList.remove("grid");
+          nSubmenu.classList.remove("translate-y-0");
+          nSubmenu.classList.remove("-translate-y-50");
+          nSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!support.contains(e.target)) {
+          support.classList.remove("bg-selected-green");
+          arrow.classList.remove("rotate-[270deg]");
+          submenu.classList.add("hidden");
+          submenu.classList.remove("grid");
+          submenu.classList.remove("translate-y-0");
+          submenu.classList.remove("-translate-y-50");
+          submenu.classList.remove("opacity-100");
+        }
+      });
+    </script>
+  </body>
+</html>

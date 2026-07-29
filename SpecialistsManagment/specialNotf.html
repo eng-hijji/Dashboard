@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="bg-[#d3cfcf] min-h-screen  " dir="rtl">
+      <section class="py-2 bg-green h-screen md:flex flex-col gap-6 w-[240px] -right-full md:right-0  fixed top-0 bottom-0  overflow-y-auto sidebar  transition-all duration-300 ease z-20 ">
+
+
+         <div class="closeSide hover:scale-110 duration-300 ease p-2 bg=-white w-8 flex items-center cursor-pointer justify-center h-8 rounded-full  bg-white transition-colors  ease border hover:text-selected-green text-green absolute  font-bold left-2 top-2 md:hidden">
+       <span class="material-symbols-outlined">close</span>
+       </div>
+<h1 class="text-[#CAE5DE] text-5xl text-center ">تحرر</h1>
+
+
+<ul class="font-tajawal-med flex flex-col gap-4  pt-6 md:pt-0 ">
+  <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer bg-selected-green  p-4 text-[18px]">
+    <span class="material-symbols-outlined text-green">grid_view</span>
+   <a href="main-page.html"> الرئيسية</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">group</span>
+   <a href="../customerMangement/main-customer.html"> ادارة العملاء</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+    <span class="material-symbols-outlined">badge</span>
+   <a href="../SpecialistsManagment/main-specealist.html"> ادارة الأخصائيين</a>
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+   <span class="material-symbols-outlined">reviews</span>
+  <a href="../sessions/main-session.html"> الجلسات</a>
+  </li>
+  <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">loyalty</span>
+   برامج الدعم
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 submenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html">البرامج العلاجية</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">الدورات</a> 
+  
+  </div>
+
+
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">اللقاءات</div>
+</div>
+
+
+</li>
+
+
+
+
+
+
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+ <span class="material-symbols-outlined">bar_chart</span>
+التقارير والاحصائيات
+  </li>
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">forum</span>
+    ادارة المحادثات
+  </li>
+
+
+
+
+    <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 notifications">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">notifications</span>
+  الاشعارات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease nArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 nSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../programs/mainPrgrams.html"> اشعارات النظام</a>
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../courses/main.html">ارسال اشعارات</a> 
+  
+  </div>
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <li class="grid gap-2 group hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer support h-full w-full p-4 pages">
+     <div class="flex items-center  gap-4 text-[18px] text-white justify-between">
+  <div class="flex items-center gap-2">  
+    <span class="material-symbols-outlined">edit_square</span>
+  الصفحات
+  </div>
+<div><span class="material-symbols-outlined rotate-90 transition duration-300 ease pArrow">
+  chevron_right
+</span></div>
+  </div>
+<div class=" gap-2  -translate-y-50 group-hover:translate-y-0 transition  duration-600 ease hidden opacity-0 pSubmenu">
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    <a href="../pages/mostAsked.html">  الاسئلة الاكثر تداولا</a>
+
+    
+  </div>
+  <div class="text-green font-tajawal-med   transition-opacity duration-300 ease">
+    
+    <a href="../pages/rules.html">الشروط و الأحكام </a> 
+  
+  </div>
+
+
+
+
+
+</li>
+  
+
+   
+   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+  <span class="material-symbols-outlined">settings</span>
+الاعدادات
+  </li>
+
+    <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
+<span class="material-symbols-outlined">logout</span>
+تسجيل الخروج
+  </li>
+</ul>
+
+
+    </section>
+
+  <main class="flex md:pr-[240px] " >
+
+
+
+
+
+
+
+    <section class=" bg-main-bg min-h-screen w-full  ">
+<div class="flex items-center gap-2 px-7.5 py-5 w-full ">
+      <button class="md:hidden p-3 bg-green rounded-xl  cursor-pointer  hover:bg-[#075E] active:scale-90 transition-[color_transform] menu-btn">  <span class="material-symbols-outlined text-white">
+  menu
+</span></button>
+<div class="flex md:gap-4  items-center justify-between w-full ">
+
+
+<div class="relative  search-wrapper md:w-full "><input type="text" class="scale-0 
+  md:scale-100 origin-right transition-transform duration-300 rounded-2xl px-9  py-3.5 bg-white text-[#86909C] md:max-w-[40rem] md:w-full  border-2 border-gray-400 w-0 placeholder:text-[#86909C] placeholder:font-tajawal-med text-[14px] lg:text-[18px]" placeholder="إبحث عن أي شيء داخل المنصة">
+
+
+<span class="material-symbols-outlined absolute top-1/2 -translate-y-1/2 md:right-3 right-0 text-xl cursor-pointer searchIcon transition-all duration-300 ease">
+  search
+</span>
+
+</div>
+<div class="flex items-center gap-4 leftSide md:flex shrink-0 relative">
+  <div class=" rounded-lg flex items-center justify-center lg:-right-px lg:p-3 sm:p-2 p-1 border-2 border-[#CCCCCC] relative bg-white "><img src="../images/notification.svg" alt="" class="lg:w-7 lg:h-7 h-6 w-6">
+  <div class="bg-notification-red rounded-full text-white text-[10px] lg:text-[12px] font-tajawal-med  absolute top-[-1px] right-1 lg:right-2 px-[3px] lg:top-[6px]">12</div>
+  </div>
+  <div class="  whitespace-nowrap flex items-center"><img src="../images/Ellipse 5.svg" alt="" class="lg:w-[52px] 
+  lg:h-[52px] h-8 w-8 sm:w-11 sm:h-11"></div>
+  <div class="text-[12px] sm:text-[14px] lg:text-[16px]">مرحبا<br> أيوب</div>
+<button class=  "">
+  <span class="material-symbols-outlined rotate-90 transition duration-300 ease arrow cursor-pointer optionsArrow p-0.5 rounded-full">
+  chevron_right
+</span>
+
+
+</button>
+
+
+
+<div class=" absolute left-0 top-full right-0 z-40 min-w-[170px] px-3 py-1.5 text-[12px] md:text-[14px]  font-tajawal-med divide-y divide-[#E5E6EB]  text-pass-gray rounded-md bg-white options scale-0 transition-transform duration-300 ease">
+  <div class="flex items-center gap-6 py-2  cursor-pointer ">
+    <div>
+      <a href="../personalAccounts/personalAccount.html">الحساب الشخصي</a>
+    </div>
+  <span class="material-symbols-outlined w-[20px] h-[20px] text-[20px] flex items-center justify-center">
+  account_circle
+</span>
+  </div>  
+  <div class="flex items-center gap-6 py-2 ">
+    <div>تسجيل الخروج</div>
+ <div><span class="material-symbols-outlined">logout</span></div>
+  </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="h-[1px] w-full bg-gray-400"></div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="px-7.5 py-7 font-tajawal-med text-pass-gray">
+ادارة الاخصائيين/ تفاصيل الاخصائي
+  </div>
+  <section class="px-7.5 w-full">
+<div class="flex w-full justify-between items-center">
+<div class="font-tajawal-bold text-[#86909C] text-xl">الاخصائي</div>
+<div>
+  <button class=" flex items-center rounded-lg px-3 py-[7px] bg-[#CAE5DE] text-green font-tajawal-med text-3.5 gap-2.5">
+<img src="icons/profgreen.svg" alt="" class="w-5 h-5 ">
+خيارات العميل
+</button>
+</div>
+
+</div>
+
+<div class="flex items-center justify-center gap-6 flex-col">
+  <div class="card flex flex-col items-center justify-center gap-2 py-5">
+  <img src="../main/icons/Ellipse 5.svg" alt="" class="w-[130px] h-[130px] rounded-full ">
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> د أحمد خالد العوضي</h2>
+  <div class="text-3.5 font-tajawal-regular text-pass-gray">تم الاشتراك 05/05/2024</div>
+
+</div>
+
+<div class="flex items-center justify-center gap-6">
+  <div class="flex items-center gap-1 border-green-blue border-2 px-4 py-2.5 rounded-3xl">
+    <img src="icons/sms.svg" alt="">
+    <div class="font-tajawal-med text-[18px] text-pass-gray ">ايميل</div>
+  </div>
+  
+
+
+    <div class="flex items-center gap-1 border-green-blue border-2 px-4 py-2.5 rounded-3xl">
+    <img src="icons/whatsapp logo.svg" alt="">
+    <div class="font-tajawal-med text-[18px] text-pass-gray ">واتساب</div>
+  </div>
+
+
+   <div class="flex items-center gap-1 border-green-blue border-2 px-4 py-2.5 rounded-3xl">
+    <img src="icons/notification.svg" alt="">
+    <div class="font-tajawal-med text-[18px] text-pass-gray ">اشعار</div>
+  </div>
+
+</div>
+</div>
+<div class="py-5">
+  <div class="text-5 font-tajawal-med text-pass-gray"> المعلومات الشخصية</div>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-center">
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/sms.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">البريد الالكتروني</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">user.user@gmail.com</h2>
+</div>
+
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/call.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">رقم الهاتف</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">058 123 4567</h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/gender-fluid 1.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">الجنس</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">ذكر</h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/Group.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">الحالة الاجتماعية</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">اعزب</h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/calendar-circle.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">تاريخ الميلاد</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">5/5/2001</h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+    <img src="icons/briefcase.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">العمل</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">لا يوجد</h2>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="py-5">
+  <div class="text-5 font-tajawal-med text-pass-gray"> المؤهلات التعليمية والمهنية</div>
+
+</div>
+
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-center">
+
+
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray">الدرجة العلمية</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">جامعة الملك سعود  </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray">سنة التخرج</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> 2010 </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> مسمى التصنيف المهني</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> أعزب أخصائي نفسي اكلينيكي </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> تاريخ انتهاء التصنيف</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> 30/08/2025</h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray">عدد سنوات الخبرة</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> 13 سنة </h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> التخصص</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> علاج معرفي سلزكي</h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> نوع الاستشارات المقدمة</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> مشاكل القلق-الاكتئاب-العلاقات الاسرية </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> اللغات التي يجيدها</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> العربية - الانجليزية</h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <div class="w-6 h-6 rounded-full border-2 flex items-center border-[#86909C]"><i class="fa-regular fa-exclamation text-[#86909C]"></i></div>
+    <div class="font-tajawal-med text-pass-gray"> مسمى التصنيف المهني</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med"> أعزب أخصائي نفسي اكلينيكي </h2>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="py-5">
+  <div class="text-5 font-tajawal-med text-pass-gray">النشاط</div>
+
+</div>
+
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-center">
+
+
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">عدد الجلسات المنفذة</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">147 جلسة
+  </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+  <img src="video-square.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">عدد الدورات</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">15 دورة
+  </h2>
+</div>
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">عدد اللقاءات</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">2 لقاء  </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">عدد العملاء</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">95 عميل  </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">متوسط التقييم</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">4.8 من 5</h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">حالة الحساب </div>
+  </div>
+<span class="font-tajawal-med text-[14px] text-[#00B42A] bg-[#E8FFEA] px-3 py-px rounded-full w-fit" >نشط</span>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="py-5">
+  <div class="text-5 font-tajawal-med text-pass-gray">الارباح</div>
+
+</div>
+
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-3 items-center">
+
+
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+   <img src="images/message-favorite.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray"> اجمالي الارباح</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">548778 ر.س
+  </h2>
+</div>
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+  <img src="video-square.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">الرصيد المتاح</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">215 ر.س
+  </h2>
+</div>
+
+
+
+<div class="p-3.5 grid items-center gap-2.5  border border-gray-400 rounded-lg">
+  <div class="flex gap-2">
+  <img src="video-square.svg" alt="">
+    <div class="font-tajawal-med text-pass-gray">الرصيد المعلق</div>
+  </div>
+  <h2 class="text-label-black text-4.5 font-tajawal-med">122 ر.س
+  </h2>
+</div>
+
+
+
+</div>
+
+
+
+<div class="px-5 py-5 ">
+  <button class="text-white font-tajawal-med text-4.5 bg-green-blue text-center py-2.25 px-7 rounded-xl" >حفظ</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+  <section class="py-6 grid gap-2.75 ">
+
+
+    <h1 class="font-tajawal-bold text-5 text-[#86909C] ">الجلسات</h1>
+
+<table class="border border-gray-400 w-full divide-y border-collapse">
+  <thead>
+
+
+    <tr>
+      <th class="text-label-black font-tajawal-med  ">رقم الجلسة</th>
+
+      <th class="text-label-black font-tajawal-med  ">نوع الجلسة</th>
+
+      <th class="text-label-black font-tajawal-med  ">مدة الجلسة</th>
+
+      <th class="text-label-black font-tajawal-med  ">حالة الجلسة</th>
+
+      <th class="text-label-black font-tajawal-med  ">تاريخ الجلسة</th>
+
+      <th class="text-label-black font-tajawal-med  ">الاخصائي </th>
+
+      <th class="text-label-black font-tajawal-med  ">عدد الجلسات</th>
+
+      <th class="text-label-black font-tajawal-med  ">السعر</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody class="divide-y text-center">
+    <tr>
+      <td class="text-green font-tajawal-regular">جلسة #26564 </td>
+
+      <td class="text-label-black font-tajawal-regular">استشارة سريعة</td>
+
+      <td class="text-label-black font-tajawal-regular">3 دقائق</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-green bg-green-blue p-1 text-3.5 rounded-3xl "> جديدة</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+
+
+        <tr>
+      <td class="text-green font-tajawal-regular">جلسة #98713</td>
+
+      <td class="text-label-black font-tajawal-regular"> نمط الحياة</td>
+
+      <td class="text-label-black font-tajawal-regular">45 دقيقة</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-[#F7BA1E] bg-[#FFFCE8] p-1 text-3.5 rounded-3xl "> قيد التنفيذ</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+
+           <tr>
+      <td class="text-green font-tajawal-regular">جلسة #98713</td>
+
+      <td class="text-label-black font-tajawal-regular"> نمط الحياة</td>
+
+      <td class="text-label-black font-tajawal-regular">45 دقيقة</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-[#00B42A] bg-[#E8FFFA] p-1 text-3.5 rounded-3xl ">  مؤجل</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+
+
+          <tr>
+      <td class="text-green font-tajawal-regular">جلسة #98713</td>
+
+      <td class="text-label-black font-tajawal-regular"> نمط الحياة</td>
+
+      <td class="text-label-black font-tajawal-regular">45 دقيقة</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-[#F53F3F] bg-[#FFECE8] p-1 text-3.5 rounded-3xl ">  قيد التنفيذ</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+     <tr>
+      <td class="text-green font-tajawal-regular">جلسة #26564 </td>
+
+      <td class="text-label-black font-tajawal-regular">استشارة سريعة</td>
+
+      <td class="text-label-black font-tajawal-regular">3 دقائق</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-green bg-green-blue p-1 text-3.5 rounded-3xl "> جديدة</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+        <tr>
+      <td class="text-green font-tajawal-regular">جلسة #26564 </td>
+
+      <td class="text-label-black font-tajawal-regular">استشارة سريعة</td>
+
+      <td class="text-label-black font-tajawal-regular">3 دقائق</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-green bg-green-blue p-1 text-3.5 rounded-3xl "> جديدة</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+  </tbody>
+
+</table>
+
+
+
+
+
+
+
+<h1 class="font-tajawal-bold text-5 text-[#86909C] ">برامج الدعم</h1>
+
+<table class="border border-gray-400 w-full divide-y border-collapse">
+  <thead>
+
+
+    <tr>
+      <th class="text-label-black font-tajawal-med  ">اسم البرنامج</th>
+
+      <th class="text-label-black font-tajawal-med  ">نوع البرنامج</th>
+
+      <th class="text-label-black font-tajawal-med  ">مدة البرنامج</th>
+
+      <th class="text-label-black font-tajawal-med  ">حالة البرنامج</th>
+
+      <th class="text-label-black font-tajawal-med  ">تاريخ البرنامج</th>
+
+      <th class="text-label-black font-tajawal-med  ">الاخصائي </th>
+
+      <th class="text-label-black font-tajawal-med  ">عدد الحلقات</th>
+
+      <th class="text-label-black font-tajawal-med  ">السعر</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody class="divide-y text-center">
+    <tr>
+      <td class="text-green font-tajawal-regular">دورة فنية الظل</td>
+
+      <td class="text-label-black font-tajawal-regular"> دورة</td>
+
+      <td class="text-label-black font-tajawal-regular">30 دقائق</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-green bg-green-blue p-1 text-3.5 rounded-3xl "> جديدة</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+
+
+        <tr>
+      <td class="text-green font-tajawal-regular">بودكاست التعلق العاطفي</td>
+
+      <td class="text-label-black font-tajawal-regular"> لقاء</td>
+
+      <td class="text-label-black font-tajawal-regular">45 دقيقة</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-[#F7BA1E] bg-[#FFFCE8] p-1 text-3.5 rounded-3xl "> قيد التنفيذ</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+    
+
+        <tr>
+      <td class="text-green font-tajawal-regular"> فنية خوض البدايات</td>
+
+      <td class="text-label-black font-tajawal-regular"> لقاء</td>
+
+      <td class="text-label-black font-tajawal-regular">45 دقيقة</td>
+
+      <td class="text-label-black font-tajawal-regular"><div class= "w-fit text-[#F7BA1E] bg-[#FFFCE8] p-1 text-3.5 rounded-3xl "> قيد التنفيذ</div></td>
+
+      <td class="text-label-black font-tajawal-regular">22/8/2024 ، 04:20م</td>
+
+      <td class="text-label-black font-tajawal-regular">هاشم ناجي</td>
+
+      <td class="text-label-black font-tajawal-regular"> 1</td>
+
+      <td class="text-label-black font-tajawal-regular">135 ر.س</td>
+
+      
+
+    </tr>
+
+
+ 
+  </tbody>
+
+</table>
+
+
+
+
+
+  </section>
+
+   </section>
+
+
+
+  </main>
+  
+
+<div class="fixed top-0 bottom-0 left-0 right-0 bg-[#81C6C3]/40 flex items-center justify-center">
+<div class="p-6 rounded-xl grid gap-6 max-w-120 w-[80%] bg-white">
+  <div class="flex items-center justify-between w-full"> 
+ <div>
+  ارسال اشعار
+ </div>
+<img src="images/close-circle.svg" alt="">
+
+    
+  </div>
+
+  <div class="grid gap-2"> 
+<label>محتوى الاشعار</label>
+<textarea name="notification" id="note"  class="border p-3" placeholder="اكتب محتوى الاشعار هنا...">
+
+</textarea>
+  </div>
+
+  <div class="grid gap-2 grid-cols-[2fr_1fr]">
+<button>ارسال</button>
+<div>
+  الغاء
+</div>
+  </div>
+</div>
+</div>
+
+<script>
+  let support = document.querySelector(".support");
+      let arrow = document.querySelector(".arrow");
+      let submenu = document.querySelector(".submenu");
+      let nArrow = document.querySelector(".nArrow");
+      let nSubmenu = document.querySelector(".nSubmenu");
+      let pArrow = document.querySelector(".pArrow");
+      let pSubmenu = document.querySelector(".pSubmenu");
+      let menu = document.querySelector(".menu-btn");
+      let sideBar = document.querySelector(".sidebar");
+      let close = document.querySelector(".closeSide");
+      let left = document.querySelector(".leftSide");
+      let optionsArrow = document.querySelector(".optionsArrow");
+      let searchIcon = document.querySelector(".searchIcon");
+      let wrapper = document.querySelector(".search-wrapper");
+      let options = document.querySelector(".options");
+      let notifications = document.querySelector(".notifications");
+      let pages = document.querySelector(".pages");
+
+      optionsArrow.addEventListener("click", () => {
+        optionsArrow.classList.toggle("bg-gray-400");
+        options.classList.toggle("scale-100");
+      });
+
+      searchIcon.addEventListener("click", () => {
+        wrapper.querySelector("input").classList.toggle("scale-100");
+        wrapper.querySelector("input").classList.toggle("w-full");
+        wrapper.querySelector("input").classList.toggle("w-0");
+
+        searchIcon.classList.toggle("right-3");
+        wrapper.classList.toggle("w-full");
+        left.classList.toggle("hidden");
+      });
+      close.addEventListener("click", (e) => {
+        sideBar.classList.add("-right-full");
+        sideBar.classList.remove("right-0");
+      });
+      menu.addEventListener("click", (e) => {
+        sideBar.classList.replace("-right-full", "right-0");
+      });
+
+      support.addEventListener("click", (e) => {
+        support.classList.toggle("bg-selected-green");
+        arrow.classList.toggle("rotate-[270deg]");
+        submenu.classList.toggle("hidden");
+        submenu.classList.toggle("grid");
+        submenu.classList.toggle("translate-y-0");
+        submenu.classList.toggle("-translate-y-50");
+        submenu.classList.toggle("opacity-100");
+      });
+
+      pages.addEventListener("click", (e) => {
+        pages.classList.toggle("bg-selected-green");
+        pArrow.classList.toggle("rotate-[270deg]");
+        pSubmenu.classList.toggle("hidden");
+        pSubmenu.classList.toggle("grid");
+        pSubmenu.classList.toggle("translate-y-0");
+        pSubmenu.classList.toggle("-translate-y-50");
+        pSubmenu.classList.toggle("opacity-100");
+      });
+
+      notifications.addEventListener("click", (e) => {
+        notifications.classList.toggle("bg-selected-green");
+        nArrow.classList.toggle("rotate-[270deg]");
+        nSubmenu.classList.toggle("hidden");
+        nSubmenu.classList.toggle("grid");
+        nSubmenu.classList.toggle("translate-y-0");
+        nSubmenu.classList.toggle("-translate-y-50");
+        nSubmenu.classList.toggle("opacity-100");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!pages.contains(e.target)) {
+          pages.classList.remove("bg-selected-green");
+          pArrow.classList.remove("rotate-[270deg]");
+          pSubmenu.classList.add("hidden");
+          pSubmenu.classList.remove("grid");
+          pSubmenu.classList.remove("translate-y-0");
+          pSubmenu.classList.remove("-translate-y-50");
+          pSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!notifications.contains(e.target)) {
+          notifications.classList.remove("bg-selected-green");
+          nArrow.classList.remove("rotate-[270deg]");
+          nSubmenu.classList.add("hidden");
+          nSubmenu.classList.remove("grid");
+          nSubmenu.classList.remove("translate-y-0");
+          nSubmenu.classList.remove("-translate-y-50");
+          nSubmenu.classList.remove("opacity-100");
+        }
+
+        if (!support.contains(e.target)) {
+          support.classList.remove("bg-selected-green");
+          arrow.classList.remove("rotate-[270deg]");
+          submenu.classList.add("hidden");
+          submenu.classList.remove("grid");
+          submenu.classList.remove("translate-y-0");
+          submenu.classList.remove("-translate-y-50");
+          submenu.classList.remove("opacity-100");
+        }
+      });
+</script>
+</body>
+</html>
+
+
+<!-- \
+ 
+work on the padding and th fonts and boldness
+-->
