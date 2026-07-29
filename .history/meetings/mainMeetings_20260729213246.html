@@ -263,20 +263,8 @@
 
 
 
-<div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 items-center gap-3 px-7.5 py-5 ">
+<div class="grid grid-cols-1  lg:grid-cols-2 items-center gap-3 px-7.5 py-5 ">
 
-<div class="p-[14px] grid gap-2.5 font-tajawal-med border rounded-xl border-gray-400 bg-white ">
-
-
-  <div class="flex gap-1 text-pass-gray">
-    <img src="../images/calendar-2.svg" alt="">
-    عدد الدورات الحالية
-  </div>
-  <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 دورة
-  </div>
-
-</div>
 
 
 
@@ -286,10 +274,10 @@
 
   <div class="flex gap-1 text-pass-gray">
     <img src="../images/calendar-2.svg" alt="">
-    عدد الدورات المكتملة
+  عدد اللقاءات الحالية
   </div>
   <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 دورة
+147 لقاء
   </div>
 
 </div>
@@ -299,10 +287,10 @@
 
   <div class="flex gap-1 text-pass-gray">
     <img src="../images/calendar-2.svg" alt="">
-    عدد الدورات الجارية
+عدد اللقاءات التي تم مشاهدتها
   </div>
   <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 دورة
+147 لقاء
   </div>
 
 </div>
@@ -571,7 +559,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         <div class="w-full flex justify-between items-center font-tajawal-med text-green">
           <div class="flex gap-2 text-5">
                <img src="../images/filter.svg" alt="">
-      فرز الدورات حسب
+      فرز اللقاءات حسب
           </div>
 
           <div class="closeFilter  transition active:scale-90 cursor-pointer duration-300 ease"><img src="../images/close-circle.svg" alt=""></div>
@@ -582,9 +570,9 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         <form  class="flex flex-col gap-3 ">
 
             <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">   مضيف الدورة</label>
+              <label for="gender" class="font-tajawal-med text-label-black ">   مضيف اللقاء</label>
 
-           <div class="relative w-full">
+           <div class="relative w-full text-[#86909C]">
                <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل ">
                 <option value="" disabled selected hidden> الكل</option>
                 <option value="new">محمد ابو القمبز</option>
@@ -599,30 +587,13 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
            </div>
             </div>
                 
-              <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">    عدد المحاضرات</label>
-
-           <div class="relative w-full">
-               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر عدد المحاضرات ">
-                <option value="" disabled selected hidden> اختر عدد المحاضرات</option>
-                <option value="new"> 2 </option>
-                <option value="completed">5  </option>
-                <option value="on-going">  20 </option>
-                
-
-
-               </select>
-
-               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
-           </div>
-            </div>
-
+           
             <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">    حالة الدورة  </label>
+              <label for="gender" class="font-tajawal-med text-label-black ">    حالة اللقاء  </label>
 
-           <div class="relative w-full">
+           <div class="relative w-full text-[#86909C]">
                <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر حالة الدورة ">
-                <option value="" disabled selected hidden> اختر حالة الدورة </option>
+                <option value="" disabled selected hidden> اختر حالة اللقاء </option>
                 <option value="completed">فعالة  </option>
                 <option value="on-going">  غير فعالة </option>
                 
@@ -634,14 +605,14 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
            </div>
             </div>
             <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">     عدد المشاركين</label>
+              <label for="gender" class="font-tajawal-med text-label-black ">     نوع اللقاء</label>
 
-           <div class="relative w-full">
-               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر عدد المشاركين ">
-                <option value="" disabled selected hidden> اختر عدد المشاركين</option>
-                <option value="new"> 2 </option>
-                <option value="completed">5  </option>
-                <option value="on-going">  20 </option>
+           <div class="relative w-full text-[#86909C]">
+               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر اللقاء  ">
+                <option value="" disabled selected hidden> اختر نوع اللقاء </option>
+                <option value="new"> مسجل </option>
+                <option value="completed">لايف </option>
+             
                 
 
 
@@ -651,11 +622,11 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
            </div>
             </div>
             <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">    عدد المحاضرات</label>
+              <label for="gender" class="font-tajawal-med text-label-black ">    عدد المشاهدين</label>
 
-           <div class="relative w-full">
-               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="حدد السعر   ">
-                <option value="" disabled selected hidden>  حدد السعر </option>
+           <div class="relative w-full text-[#86909C]">
+               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر عدد المشاهدين    ">
+                <option value="" disabled selected hidden>  اختر عدد المشاهدين</option>
                 <option value="new"> 2 </option>
                 <option value="completed">5  </option>
                 <option value="on-going">  20 </option>
