@@ -638,7 +638,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
                <input id="date-from" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date  peer" placeholder="حدد التاريخ ">
 
                <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
-           </div>  </div>
+           </div>  
 
 
 
@@ -678,7 +678,20 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
             </div>
             
             
-         
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">   </label>
+
+           <div class="relative w-full">
+               <input  name="exp" id="exp" type="number" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="حدد الخبرة">
+             
+
+
+
+             
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
 
 
 
@@ -690,7 +703,12 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
 
 
              
-             
+                <div class="relative w-full">
+               <input id="date-to" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date peer" placeholder="الي ">
+
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
+           </div>
+            </div>
 
        
 
@@ -731,21 +749,6 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       let options = document.querySelector(".options");
       let notifications = document.querySelector(".notifications");
       let pages = document.querySelector(".pages");
-      let calenders=document.querySelectorAll('.calender');
-      document.querySelectorAll('.date').forEach((el)=>{
-el.addEventListener('focus',(e)=>{
-e.target.type='date';
-    if (typeof e.target.showPicker === 'function') {
-      e.target.showPicker();
-    }
-})
-el.addEventListener('blur',(e)=>{
-
-     if (!e.target.value) {
-      e.target.type = 'text';
-    }
-})
-      })
        
    let filterButton=document.querySelector('.filterButton');
 

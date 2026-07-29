@@ -731,21 +731,6 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       let options = document.querySelector(".options");
       let notifications = document.querySelector(".notifications");
       let pages = document.querySelector(".pages");
-      let calenders=document.querySelectorAll('.calender');
-      document.querySelectorAll('.date').forEach((el)=>{
-el.addEventListener('focus',(e)=>{
-e.target.type='date';
-    if (typeof e.target.showPicker === 'function') {
-      e.target.showPicker();
-    }
-})
-el.addEventListener('blur',(e)=>{
-
-     if (!e.target.value) {
-      e.target.type = 'text';
-    }
-})
-      })
        
    let filterButton=document.querySelector('.filterButton');
 
