@@ -286,7 +286,7 @@
 
             <div class="flex items-center justify-center md:gap-6 gap-3 flex-wrap">
               <div
-                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl hover:text-selected-green hover:scale-105 hover:shadow-2xl transition duration-300 ease"
+                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl"
               >
                 <img class="w-6 h-6 shrink-0" src="../images/smsgreen.svg" alt="" />
                 <div class="font-tajawal-med text-[18px] text-pass-gray">
@@ -295,7 +295,7 @@
               </div>
 
               <div
-                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl hover:text-selected-green hover:scale-105 hover:shadow-2xl transition duration-300 ease"
+                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl"
               >
                 <img class="w-6 h-6 shrink-0" src="../images/whatsapp logo.svg" alt="" />
                 <div class="font-tajawal-med text-[18px] text-pass-gray cursor-pointer">
@@ -304,7 +304,7 @@
               </div>
 
               <div
-                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl hover:text-selected-green hover:scale-105 hover:shadow-2xl transition duration-300 ease notificationBtn"
+                class="cursor-pointer flex items-center gap-2 border-green-blue border-2 px-4 py-2.5 rounded-3xl"
               >
                 <img class="w-6 h-6 shrink-0" src="../images/notificationgreen.svg" alt="" />
                 <div class="font-tajawal-med text-[18px] text-pass-gray">
@@ -1041,25 +1041,15 @@
         </section>
       </section>
     </main>
-    <div class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 z-999 notificationPanel font-tajawal-med  -translate-y-full opacity-0 transition duration-300 ease">
-      <div class="max-w-[530px] w-full grid gap-6 p-6 bg-white rounded-xl ">
+    <div class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 z-999 notificationPanel font-tajawal-med ">
+      <div class="max-w-[530px] w-full grid gap-6 p-6 bg-white ">
 
-        <div class="flex items-center gap-2 justify-between ">
+        <div class="flex items-center gap-2 ">
           <div class="flex items-center gap-2 text-green text-xl " >
             <img src="../images/notificationgreen.svg" alt="" class="w-6 h-6 shrink-0">
             ارسال اشعار
           </div>
-          <div class="shrink-0 closeNotification cursor-pointer"><img src="../images/close-circle.svg" alt="" class="w-7 h-7"></div>
-        </div>
-        <div class="grid gap-3">
-          <label for="notifactionContent" class="text-label-black opacity-80 ">محتوى الإشعار</label>
-          <textarea name="notifactionContent" id="notifactionContent" class="border border-[#E5E6EB] rounded-lg px-3 py-2.5 text-[#86909C]  " placeholder="اكتب محتوى الإشعار هنا..."></textarea>
-
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr]">
-          <button class="w-full  rounded-lg px-4 py-2.5 bg-green text-white ">إرسال</button>
-
-          <button class="px-4 py-2.5 text-pass-gray bg-[#F9FAFB] rounded-lg w-full">الغاء</button>
+          <div class="shrink-0 closeNotification cursor-pointer"><img src="../images/close-circle.svg" alt=""></div>
         </div>
       </div>
     </div>
@@ -1225,26 +1215,6 @@ left.classList.toggle('hidden')
 
 
       })
-
-
-      let notificationBtn=document.querySelector('.notificationBtn');
-      let notificationPanel=document.querySelector('.notificationPanel')
-      let closeNotification=document.querySelector('.closeNotification');
-      notificationBtn.addEventListener('click',()=>{
-notificationPanel.classList.remove('-translate-y-full')
-notificationPanel.classList.remove('opacity-0')
-notificationPanel.classList.add('translate-y-0')
-notificationPanel.classList.add('opacity-100')
-
-      })
-      closeNotification.addEventListener('click',()=>{
-        notificationPanel.classList.add('-translate-y-full')
-notificationPanel.classList.add('opacity-0')
-notificationPanel.classList.remove('translate-y-0')
-notificationPanel.classList.remove('opacity-100')
-
-      })
-
      
   </script>
   </body>

@@ -1041,10 +1041,10 @@
         </section>
       </section>
     </main>
-    <div class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 z-999 notificationPanel font-tajawal-med  -translate-y-full opacity-0 transition duration-300 ease">
+    <div class="fixed inset-0 bg-[#81C6C3]/40 flex items-center justify-center p-2 z-999 notificationPanel font-tajawal-med  -translate-y-full opacity-0">
       <div class="max-w-[530px] w-full grid gap-6 p-6 bg-white rounded-xl ">
 
-        <div class="flex items-center gap-2 justify-between ">
+        <div class="flex items-center gap-2 ">
           <div class="flex items-center gap-2 text-green text-xl " >
             <img src="../images/notificationgreen.svg" alt="" class="w-6 h-6 shrink-0">
             ارسال اشعار
@@ -1053,13 +1053,13 @@
         </div>
         <div class="grid gap-3">
           <label for="notifactionContent" class="text-label-black opacity-80 ">محتوى الإشعار</label>
-          <textarea name="notifactionContent" id="notifactionContent" class="border border-[#E5E6EB] rounded-lg px-3 py-2.5 text-[#86909C]  " placeholder="اكتب محتوى الإشعار هنا..."></textarea>
+          <textarea name="notifactionContent" id="notifactionContent" class="border border-[#E5E6EB] rounded-lg px-3 py-2.5 text-[#86909C]  " placeholder="اكتب محتوى الإشعار هنا..."> </textarea>
 
         </div>
         <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr]">
           <button class="w-full  rounded-lg px-4 py-2.5 bg-green text-white ">إرسال</button>
 
-          <button class="px-4 py-2.5 text-pass-gray bg-[#F9FAFB] rounded-lg w-full">الغاء</button>
+          <button class="px-4 py-2.5 text-pass-gray bg-[#F9FAFB] rounded-lg w-full"></button>
         </div>
       </div>
     </div>
@@ -1229,19 +1229,12 @@ left.classList.toggle('hidden')
 
       let notificationBtn=document.querySelector('.notificationBtn');
       let notificationPanel=document.querySelector('.notificationPanel')
-      let closeNotification=document.querySelector('.closeNotification');
+      let closeNotification=document.querySelector('.closeNotification')
       notificationBtn.addEventListener('click',()=>{
 notificationPanel.classList.remove('-translate-y-full')
 notificationPanel.classList.remove('opacity-0')
 notificationPanel.classList.add('translate-y-0')
 notificationPanel.classList.add('opacity-100')
-
-      })
-      closeNotification.addEventListener('click',()=>{
-        notificationPanel.classList.add('-translate-y-full')
-notificationPanel.classList.add('opacity-0')
-notificationPanel.classList.remove('translate-y-0')
-notificationPanel.classList.remove('opacity-100')
 
       })
 
