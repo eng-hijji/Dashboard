@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body class="bg-[#FAFAFA] min-h-screen  " dir="rtl">
+<body class="bg-[#d3cfcf] min-h-screen  " dir="rtl">
       <section class="py-2 bg-green h-screen md:flex flex-col gap-6 w-[240px] -right-full md:right-0  fixed top-0 bottom-0  overflow-y-auto sidebar  transition-all duration-300 ease z-20 ">
 
 
@@ -446,7 +446,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
     </span></div>
 <div class="more absolute top-full left-0 z-999 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px] text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
   <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
-  <a href="customerDetails.html"> <a href="../customerMangement/sessionDetails.html"> مشاهدة التفاصيل</a></a>
+  <a href="customerDetails.html">  مشاهدة التفاصيل</a>
     <img src="../images/eye.svg" alt="">
 
   </div>
@@ -545,7 +545,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
     </span></div>
 <div class="more absolute top-full left-0 z-999 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px] text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
   <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
-  <a href="customerDetails.html">  <a href="../customerMangement/sessionDetails.html">مشاهدة التفاصيل</a></a>
+  <a href="customerDetails.html">  مشاهدة التفاصيل</a>
     <img src="../images/eye.svg" alt="">
 
   </div>
@@ -804,43 +804,69 @@ scale-0 ">
            </div>
 
 
+                       <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">رقم الجوال </label>
+
+           <div class="relative w-full">
+               <input  name="gender" id="gender" type="email" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="000 000 0000">
+              
+             
+
+               <img src="../images/call.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+            
                 <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">  العميل  </label>
-                <div class="relative w-full">
-               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر  العميل">
-                <option value="" disabled selected hidden>اختر  العميل</option>
-                <option value="male"> انجليزية</option>
-                <option value="female">عربية </option>
-                <option value="female">فرنسية</option>
-             
+              <label for="gender" class="font-tajawal-med text-label-black ">  الجنس</label>
 
+           <div class="relative w-full">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">ذكر</option>
+                <option value="female">انثى</option>
 
-               </select></div></div>
+               </select>
 
-                      <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">  الاخصائي  </label>
-                <div class="relative w-full">
-               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر  الاخصائي">
-                <option value="" disabled selected hidden>اختر  الاخصائي</option>
-                <option value="male"> انجليزية</option>
-                <option value="female">عربية </option>
-                <option value="female">فرنسية</option>
-             
-
-
-               </select></div></div>
-
-
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
 
             
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  الحالة الاجتماعية</label>
 
-            
-          
+           <div class="relative w-full">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">اعزب/عزباء</option>
+                <option value="female">متزوج/ة</option>
+                <option value="female">مطلقة/ة</option>
+                <option value="female">ارمل/ة</option>
 
-          
+
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+              <div class="grid gap-2">
+              <label for="status" class="font-tajawal-med text-label-black "> تاريخ الميلاد</label>
+
+           <div class="relative w-full">
+               <input id="status" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date peer" placeholder="حدد التاريخ">
+
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
+           </div>
+            </div>
+    
     <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-3 font-tajawal-med not-only-of-type:">
-              <button class="bg-green text-white text-center w-full py-2.5 rounded-lg">حفظ الجلسة </button>
-              <button class="text-pass-gray bg-[#F9FAFB]"> الغاء </button>
+              <button class="bg-green text-white text-center w-full py-2.5 rounded-lg">عرض النتائج</button>
+              <button class="text-pass-gray bg-[#F9FAFB]"> اعادة تعيين</button>
 
             </div>
 

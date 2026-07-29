@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body class="bg-[#FAFAFA] min-h-screen  " dir="rtl">
+<body class="bg-[#d3cfcf] min-h-screen  " dir="rtl">
       <section class="py-2 bg-green h-screen md:flex flex-col gap-6 w-[240px] -right-full md:right-0  fixed top-0 bottom-0  overflow-y-auto sidebar  transition-all duration-300 ease z-20 ">
 
 
@@ -21,7 +21,7 @@
 <ul class="font-tajawal-med flex flex-col gap-4  pt-6 md:pt-0 ">
   <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer bg-selected-green  p-4 text-[18px]">
     <span class="material-symbols-outlined text-green">grid_view</span>
-   <a href="main-page.html"> الرئيسية</a>
+   <a href="../main/main-page.html"> الرئيسية</a>
   </li>
    <li class="flex items-center gap-2 hover:bg-selected-green  transition-colors duration-300 ease cursor-pointer  p-4 text-[18px] text-white" >
     <span class="material-symbols-outlined">group</span>
@@ -236,20 +236,10 @@
 
 <div class="h-[1px] w-full bg-gray-400"></div>
 
-
-
-
-
-
-
-
-
-
-
 <div class="flex flex-col gap-2.5 px-7.5 pt-5">
   <div >
-  <div class="flex gap-1 border-b pb-1">
-    <img src="../images/video-square.svg" alt="" class="w-7 h-7">
+  <div class="flex gap-1 border-b">
+    <img src="../images/people (2).svg" alt="" class="w-7 h-7">
     <div class="font-tajawal-med text-green text-xl tracking-wide">ادارة العملاء
 <span class="text-pass-gray text-[16px] font-tajawal-med">(242 عميل)</span>
     </div>
@@ -257,60 +247,9 @@
 
 </div>
 <div class=" text-pass-gray font-tajawal-med ">
-استعراض كافة البرامج
+استعراض كافة العملاء
 </div>
 </div>
-
-
-
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-3 px-7.5 py-5 ">
-
-<div class="p-[14px] grid gap-2.5 font-tajawal-med border rounded-xl border-gray-400 ">
-
-
-  <div class="flex gap-1 text-pass-gray">
-    <img src="../images/calendar-2.svg" alt="" class="max-w-6 w-full h-auto">
-    عدد البرامج العلاجية الحالية
-  </div>
-  <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 برنامج
-  </div>
-
-</div>
-<div class="p-[14px] grid gap-2.5 font-tajawal-med border rounded-xl border-gray-400 ">
-
-
-  <div class="flex gap-1 text-pass-gray">
-    <img src="../images/calendar-2.svg" alt="" class="max-w-6 w-full h-auto">
-    عدد البرامج العلاجية الحالية
-  </div>
-  <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 برنامج
-  </div>
-
-</div>
-<div class="p-[14px] grid gap-2.5 font-tajawal-med border rounded-xl border-gray-400 ">
-
-
-  <div class="flex gap-1 text-pass-gray">
-    <img src="../images/calendar-2.svg" alt="" class="max-w-6 w-full h-auto">
-    عدد البرامج العلاجية الحالية
-  </div>
-  <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 برنامج
-  </div>
-
-</div>
-
-
-
-
-
-
-</div>
-
-
-
 <div class="flex flex-col lg:flex-row  lg:items-center w-full justify-between py-5 px-7.5 gap-4">
 <div class="flex items-center gap-2 w-full ">
   <button class="cursor-pointer px-4 py-2.5 border border-gray-400 rounded-lg flex justify-center items-center filterButton transition  active:scale-90">
@@ -321,25 +260,25 @@
   <input type="text" name="" id="" class="px-7.5 py-2.5 rounded lg:max-w-80 w-full max-w-full    font-tajawal-regular placeholder:font-tajawal-regular border border-gray-400  text-[14px] md:text-[16px] " placeholder="البحث عن أخصائي، عميل...">
   <div class="absolute top-1/2 right-2 -translate-y-1/2  "><img src="../images/search-normal.svg" alt=""></div>
 </div></div>
-<button class="max-w-[145px] w-full
-bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green active:scale-90 transition-[background-color_transform] duration-300 ease gap-1 px-4 py-2.5 rounded-lg "><img src="../images/add.svg" alt="">
-<a href="addCourse.html">اضافة برامج </a>
+<button class="max-w-[170px] w-fit lg:w-full
+bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green active:scale-90 transition-[background-color_transform] duration-300 ease gap-1 px-4 py-2.5 rounded-lg createButton cursor-pointer "><img src="../images/add.svg" alt="">
+اضافة مستخدم
 </button>
 </div>
 
     <div class="px-7.5 py-5 ">
 
 <div class="w-full rounded-lg border border-gray-400">
-  <table class="w-full bg-white border-collapse divide-y divide-gray-400">
+  <table class="w-full border-collapse divide-y divide-gray-400">
 
 
-    <thead class="hidden lg:table-header-group border-b  rounded-lg overflow-hidden border-gray-400">
+    <thead class="hidden lg:table-header-group">
       <tr class="font-tajawal-med text-label-black text-right">
-        <th class="px-5 py-3">اسم البرنامج</th>
-        <th class="px-5 py-3">مضيف البرامج</th>
-        <th class="px-5 py-3">عدد الجلسات</th>
-        <th class="px-5 py-3">حالة البرامج</th>
-        <th class="px-5 py-3">عدد المشتركين</th>
+        <th class="px-5 py-3">الاسم </th>
+        <th class="px-5 py-3"> البريد الالكتروني</th>
+        <th class="px-5 py-3"> رقم الجوال</th>
+        <th class="px-5 py-3"> الحالة الاجتماعية</th>
+        <th class="px-5 py-3"> تاريخ الميلاد</th>
         <th class="px-5 py-3">السعر</th>
       </tr>
     </thead>
@@ -350,50 +289,54 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
 
   
         <td
-          data-name="اسم البرنامج"
-          class="block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none"
+          data-name="الاسم "
+          class="flex gap-1 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none "
         >
-          <span class="font-tajawal-regular text-green">
-            التخلص من الاكتئاب
+       <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-full p-0.5 pb-0 bg-gray-300"> 
+          <img src="../images/user.svg" alt="">
+
+        </div>
+           <span class="font-tajawal-regular text-green">
+          شمياء ابو القمبز
           </span>
+       </div>
         </td>
 
 
         <td
-          data-name="مضيف البرامج"
+          data-name="البريد الالكتروني"
           class="block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none"
         >
-          محمد ابو القمبز
+  user.user@gmail.com 
         </td>
 
 
         <td
-          data-name="عدد الجلسات"
+          data-name="رقم الجوال "
           class="block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none"
         >
-          5
+         059 524 9576 
         </td>
 
   
         <td
-          data-name="حالة البرامج"
+          data-name="الجنس"
           class="flex items-center gap-4 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none"
         >
-          <div class="w-fit rounded-full bg-[#E8FFEA] px-3.5 py-1 text-sm text-[#00B42A]">
-            فعالة
-          </div>
+         أنثى
         </td>
 
      
         <td
-          data-name="عدد المشتركين"
+          data-name="الحالة الإجتماعية  "
           class="block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base lg:table-cell lg:px-5 lg:py-5 lg:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] lg:before:content-none"
         >
-          24
+          أعزب
         </td>
 
     <td
-  data-name="السعر"
+  data-name="تاريخ الميلاد"
   class="flex items-center gap-4 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base
          lg:table-cell lg:px-5 lg:py-5 lg:text-base
          before:mr-2 before:font-tajawal-med
@@ -403,15 +346,15 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
   <div class="flex items-center justify-between gap-4 max-w-full relative">
     
     <span class="whitespace-nowrap">
-      154ر.س
+5/5/2001
     </span>
 
     <div class="w-fit dots cursor-pointer"><span class="material-symbols-outlined shrink-0">
       more_vert
     </span></div>
-<div class="more absolute top-full left-0 z-50 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px] text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
+<div class="more absolute top-full left-0 z-50 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px]text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
   <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
-    مشاهدة التفاصيل
+  <a href="customerDetails.html">  مشاهدة التفاصيل</a>
     <img src="../images/eye.svg" alt="">
 
   </div>
@@ -434,12 +377,10 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
     </tbody>
   </table>
 </div>
-
    <div class="w-full flex  justify-center gap-6 py-8 text-[22px]">
-        <div><img src="../images/arrow-up.svg" alt="" class="w-6 h-6"></div>
-   
+    <div ><img src="images/arrow-up.svg" alt="" class="rotate-180 w-6 h-6"></div>
 
-    <div class="inline-flex items-center gap-6 text-[#86909C] bg-[#F9FAFB]" >
+    <div class="flex items-center gap-6 text-[#86909c]" >
       <div class="flex items-center gap-4">
 <div class="text-green">1</div>
 <div >2</div>
@@ -449,7 +390,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       <div>.</div>
       <div>12</div>
     </div>
- <div ><img src="../images/arrow-up.svg" alt="" class="rotate-180 w-6 h-6"></div>
+    <div><img src="images/arrow-up.svg" alt="" class="w-6 h-6"></div>
    </div>
     </div>
 
@@ -458,15 +399,14 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
   
 
   </main>
+    <div class="fixed inset-0 w-full bg-[#81C6C3]/40 flex justify-center items-center overflow-y-auto p-4 z-[9999] filterBody  transition-all duration-300 ease opacity-0 invisible scale-0">
 
-  <div class="fixed inset-0 w-full bg-[#81C6C3]/40 flex justify-center items-center overflow-y-auto p-4 z-[9999] filterBody opacity-0 scale-0 invisible transition-all duration-300 ease">
 
-
-    <div class=" bg-white rounded-xl border border-gray-200 p-6 grid gap-3 lg:max-w-120 max-w-90  w-full mx-auto   overflow-y-auto" >
+    <div class=" bg-white rounded-xl border border-gray-200 p-6 grid gap-3 lg:max-w-120 max-w-100  w-full mx-auto   overflow-y-auto" >
         <div class="w-full flex justify-between items-center font-tajawal-med text-green">
           <div class="flex gap-2 text-5">
                <img src="../images/filter.svg" alt="">
-             فرز البرامج العلاجية حسب
+       فرز العملاء حسب
           </div>
 
           <div class="closeFilter  transition active:scale-90 cursor-pointer duration-300 ease"><img src="../images/close-circle.svg" alt=""></div>
@@ -477,51 +417,66 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         <form  class="flex flex-col gap-3 ">
 
             <div class="grid gap-2">
-              <label for="host" class="font-tajawal-med text-label-black "> مضيف البرامج</label>
+              <label for="gender" class="font-tajawal-med text-label-black ">  الجنس</label>
 
            <div class="relative w-full">
-               <input  id="host" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">ذكر</option>
+                <option value="female">انثى</option>
+
+               </select>
 
                <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
            </div>
             </div>
 
-             <div class="grid gap-2">
-              <label for="sessions" class="font-tajawal-med text-label-black ">عدد الجلسات</label>
+            
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  الحالة الاجتماعية</label>
 
-              <input id="sessions" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C]" placeholder="اختر عدد الجلسات ">
+           <div class="relative w-full">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">اعزب/عزباء</option>
+                <option value="female">متزوج/ة</option>
+                <option value="female">مطلقة/ة</option>
+                <option value="female">ارمل/ة</option>
+
+
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
             </div>
 
 
 
               <div class="grid gap-2">
-              <label for="status" class="font-tajawal-med text-label-black ">حالة البرامج</label>
+              <label for="status" class="font-tajawal-med text-label-black "> تاريخ الميلاد</label>
 
            <div class="relative w-full">
-               <input id="status" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر حالة البرامج">
+               <input id="status" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date peer" placeholder="حدد التاريخ">
 
-               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
            </div>
             </div>
               <div class="grid gap-2">
-              <label for="participants" class="font-tajawal-med text-label-black "> عددالمشاركين</label>
+              <label for="participants" class="font-tajawal-med text-label-black  "> تاريخ فتح الحساب</label>
 
            <div class="relative w-full">
-               <input id="participants" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر عدد المشاركين">
+               <input id="date-from" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date  peer" placeholder="من ">
 
-               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
+           </div>        <div class="relative w-full">
+               <input id="date-to" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date peer" placeholder="الي ">
+
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
            </div>
             </div>
 
-                <div class="grid gap-2">
-              <label for="price" class="font-tajawal-med text-label-black ">السعر</label>
-
-           <div class="relative w-full">
-               <input type="text" id="price" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="خدد السعر">
-               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
-           </div>
-            </div>
-
+       
 
 
             <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-3 font-tajawal-med not-only-of-type:">
@@ -543,6 +498,131 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
 
   </div>
 
+
+
+      <div class="fixed inset-0 w-full bg-[#81C6C3]/40 flex justify-center items-center overflow-y-auto p-4 z-[9999] createBody  transition-all duration-300 ease  opacity-0
+invisible
+scale-0 ">
+
+
+    <div class=" bg-white rounded-xl border border-gray-200 p-6 grid gap-3 lg:max-w-120 max-w-100  w-full mx-auto   overflow-y-auto" >
+        <div class="w-full flex justify-between items-center font-tajawal-med text-green">
+          <div class="flex gap-2 text-lg">
+               <img src="../images/add-circle.svg" alt="">
+     إضاقة عميل
+          </div>
+
+          <div class="closeCreate  transition active:scale-90 cursor-pointer duration-300 ease"><img src="../images/close-circle.svg" alt=""></div>
+        </div>
+
+
+
+        <form  class="flex flex-col gap-3 ">
+
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  الاسم</label>
+
+           <div class="relative w-full">
+               <input  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الاسم">
+              
+             
+
+               <img src="../images/profile-circle.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+
+                     <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  البريد الالكتروني</label>
+
+           <div class="relative w-full">
+               <input  name="gender" id="gender" type="email" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="user.user@gmail.com">
+              
+             
+
+               <img src="../images/sms.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+                       <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">رقم الجوال </label>
+
+           <div class="relative w-full">
+               <input  name="gender" id="gender" type="email" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="000 000 0000">
+              
+             
+
+               <img src="../images/call.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+            
+                <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  الجنس</label>
+
+           <div class="relative w-full">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">ذكر</option>
+                <option value="female">انثى</option>
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+            
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">  الحالة الاجتماعية</label>
+
+           <div class="relative w-full">
+               <select  name="gender" id="gender" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل">
+                <option value="" disabled selected hidden>الكل</option>
+                <option value="male">اعزب/عزباء</option>
+                <option value="female">متزوج/ة</option>
+                <option value="female">مطلقة/ة</option>
+                <option value="female">ارمل/ة</option>
+
+
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+
+              <div class="grid gap-2">
+              <label for="status" class="font-tajawal-med text-label-black "> تاريخ الميلاد</label>
+
+           <div class="relative w-full">
+               <input id="status" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date peer" placeholder="حدد التاريخ">
+
+               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
+           </div>
+            </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-3 font-tajawal-med not-only-of-type:">
+              <button class="bg-green text-white text-center w-full py-2.5 rounded-lg">عرض النتائج</button>
+              <button class="text-pass-gray bg-[#F9FAFB]"> اعادة تعيين</button>
+
+            </div>
+
+        </form>
+
+
+    </div>
+
+<div>
+
+</div>
+
+
+  </div>
     <script>
       let support = document.querySelector(".support");
       let arrow = document.querySelector(".arrow");
@@ -563,41 +643,6 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       let pages = document.querySelector(".pages");
       let dots=document.querySelector('.dots');
       let more=document.querySelector('.more');
-      let filterButton=document.querySelector('.filterButton');
-      let filterBody=document.querySelector('.filterBody');
-      let closeFilter=document.querySelector('.closeFilter');
-      filterButton.addEventListener('click',()=>{
-        filterBody.classList.add('opacity-100');
-        filterBody.classList.add('visible');
-        filterBody.classList.add('scale-100');
-            filterBody.classList.remove('opacity-0');
-        filterBody.classList.remove('invisible');
-        filterBody.classList.remove('scale-0');
-
-
-
-
-      })
-      closeFilter.addEventListener('click',()=>{
-             filterBody.classList.remove('opacity-100');
-        filterBody.classList.remove('visible');
-        filterBody.classList.remove('scale-100');
-            filterBody.classList.add('opacity-0');
-        filterBody.classList.add('invisible');
-        filterBody.classList.add('scale-0');
-      })
-
-      dots.addEventListener('click',()=>{
-        more.classList.toggle('opacity-0');
-        more.classList.toggle('invisible');
-    
-        dots.classList.toggle('bg-gray-400');
-        dots.classList.toggle('rounded-full');
-
-
-
-
-      })
 
       optionsArrow.addEventListener("click", () => {
         optionsArrow.classList.toggle("bg-gray-400");
@@ -682,6 +727,87 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           submenu.classList.remove("opacity-100");
         }
       });
+          dots.addEventListener('click',()=>{
+        more.classList.toggle('opacity-0');
+        more.classList.toggle('invisible');
+    
+        dots.classList.toggle('bg-gray-400');
+        dots.classList.toggle('rounded-full');
+
+
+
+
+      })
+
+let calenders=document.querySelectorAll('.calender');
+      document.querySelectorAll('.date').forEach((el)=>{
+el.addEventListener('focus',(e)=>{
+e.target.type='date';
+    if (typeof e.target.showPicker === 'function') {
+      e.target.showPicker();
+    }
+})
+el.addEventListener('blur',(e)=>{
+
+     if (!e.target.value) {
+      e.target.type = 'text';
+    }
+})
+      })
+      let filterButton=document.querySelector('.filterButton');
+
+
+            let filterBody=document.querySelector('.filterBody');
+      let closeFilter=document.querySelector('.closeFilter');
+      filterButton.addEventListener('click',()=>{
+        filterBody.classList.add('opacity-100');
+        filterBody.classList.add('visible');
+        filterBody.classList.add('scale-100');
+            filterBody.classList.remove('opacity-0');
+        filterBody.classList.remove('invisible');
+        filterBody.classList.remove('scale-0');
+
+
+
+
+      })
+      closeFilter.addEventListener('click',()=>{
+             filterBody.classList.remove('opacity-100');
+        filterBody.classList.remove('visible');
+        filterBody.classList.remove('scale-100');
+            filterBody.classList.add('opacity-0');
+        filterBody.classList.add('invisible');
+        filterBody.classList.add('scale-0');
+      })
+
+
+     let createButton=document.querySelector('.createButton');
+
+
+            let createBody=document.querySelector('.createBody');
+      let closeCreate=document.querySelector('.closeCreate');
+      createButton.addEventListener('click',()=>{
+        createBody.classList.add('opacity-100');
+        createBody.classList.add('visible');
+        createBody.classList.add('scale-100');
+            createBody.classList.remove('opacity-0');
+        createBody.classList.remove('invisible');
+        createBody.classList.remove('scale-0');
+
+
+
+
+      })
+      closeCreate.addEventListener('click',()=>{
+            createBody.classList.add('opacity-0');
+        createBody.classList.add('invisible');
+        createBody.classList.add('scale-0');
+             createBody.classList.remove('opacity-100');
+        createBody.classList.remove('visible');
+        createBody.classList.remove('scale-100');
+        
+      })
+
     </script>
 </body>
 </html>

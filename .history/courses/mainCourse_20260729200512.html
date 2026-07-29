@@ -249,15 +249,15 @@
 <div class="flex flex-col gap-2.5 px-7.5 pt-5">
   <div >
   <div class="flex gap-1 border-b">
-    <img src="../images/people (2).svg" alt="" class="w-7 h-7">
-    <div class="font-tajawal-med text-green text-xl tracking-wide">االجلسات
-<span class="text-pass-gray text-[16px] font-tajawal-med">(154 جلسة)</span>
+    <img src="../images/video-square.svg" alt="" class="w-7 h-7">
+    <div class="font-tajawal-med text-green text-xl tracking-wide">الدورات
+<span class="text-pass-gray text-[16px] font-tajawal-med">(154 دورة)</span>
     </div>
   </div>
 
 </div>
 <div class=" text-pass-gray font-tajawal-med ">
-استعراض كافة الجلسات
+استعراض كافة الدورات
 </div>
 </div>
 
@@ -270,10 +270,10 @@
 
   <div class="flex gap-1 text-pass-gray">
     <img src="../images/calendar-2.svg" alt="">
-    عدد الجلسات الحالية
+    عدد الدورات الحالية
   </div>
   <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 جلسة
+147 دورة
   </div>
 
 </div>
@@ -286,10 +286,10 @@
 
   <div class="flex gap-1 text-pass-gray">
     <img src="../images/calendar-2.svg" alt="">
-    عدد الجلسات المكتملة
+    عدد الدورات المكتملة
   </div>
   <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 جلسة
+147 دورة
   </div>
 
 </div>
@@ -299,26 +299,15 @@
 
   <div class="flex gap-1 text-pass-gray">
     <img src="../images/calendar-2.svg" alt="">
-    عدد الجلسات الجارية
+    عدد الدورات الجارية
   </div>
   <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 جلسة
+147 دورة
   </div>
 
 </div>
 
-<div class="p-[14px] grid gap-2.5 font-tajawal-med border rounded-xl border-gray-400 bg-white ">
 
-
-  <div class="flex gap-1 text-pass-gray">
-    <img src="../images/calendar-2.svg" alt="">
-    عدد الجلسات الملغية
-  </div>
-  <div class="text-label-black text-[18px] [word-spacing:0.25rem] ">
-147 جلسة
-  </div>
-
-</div>
 </div>
 
 
@@ -604,7 +593,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         <div class="w-full flex justify-between items-center font-tajawal-med text-green">
           <div class="flex gap-2 text-5">
                <img src="../images/filter.svg" alt="">
-      فرز الجلسات حسب
+      فرز الدورات حسب
           </div>
 
           <div class="closeFilter  transition active:scale-90 cursor-pointer duration-300 ease"><img src="../images/close-circle.svg" alt=""></div>
@@ -615,15 +604,15 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         <form  class="flex flex-col gap-3 ">
 
             <div class="grid gap-2">
-              <label for="gender" class="font-tajawal-med text-label-black ">  حالة الجلسة</label>
+              <label for="gender" class="font-tajawal-med text-label-black ">   مضيف الدورة</label>
 
            <div class="relative w-full">
-               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر التخصص">
+               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="الكل ">
                 <option value="" disabled selected hidden> الكل</option>
-                <option value="new">جديدة</option>
-                <option value="completed">مكتملة </option>
-                <option value="on-going">قيد التنفيذ </option>
-                 <option value="canceled">ملغية  </option>
+                <option value="new">محمد ابو القمبز</option>
+                <option value="completed">محمد حجي </option>
+                <option value="on-going"> انشراح سعيد </option>
+                
 
 
                </select>
@@ -631,14 +620,41 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
                <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
            </div>
             </div>
-                <div class="grid gap-2">
-              <label for="participants" class="font-tajawal-med text-label-black  "> تاريخ  الجلسة</label>
+                
+              <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">    عدد المحاضرات</label>
 
            <div class="relative w-full">
-               <input id="date-from" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full date  peer" placeholder="حدد التاريخ ">
+               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر عدد المحاضرات ">
+                <option value="" disabled selected hidden> اختر عدد المحاضرات</option>
+                <option value="new"> 2 </option>
+                <option value="completed">5  </option>
+                <option value="on-going">  20 </option>
+                
 
-               <img src="../images/calendar-2.svg" alt="" class="absolute left-3 top-2.5 calender peer-focus:hidden" >
-           </div>  </div>
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
+
+            <div class="grid gap-2">
+              <label for="gender" class="font-tajawal-med text-label-black ">    حالة الدورة  </label>
+
+           <div class="relative w-full">
+               <select  name="speciality" id="speciality" type="text" class="border rounded-lg border-gray-400 py-2.5 px-3 placeholder:font-tajawal-regular placeholder:text-[#86909C] w-full" placeholder="اختر حالة الدورة ">
+                <option value="" disabled selected hidden> اختر حالة الدورة </option>
+                <option value="completed">فعالة  </option>
+                <option value="on-going">  غير فعالة </option>
+                
+
+
+               </select>
+
+               <img src="images/arrow-down.svg" alt="" class="absolute left-3 top-2.5" >
+           </div>
+            </div>
 
 
 
