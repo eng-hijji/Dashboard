@@ -469,7 +469,9 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       </tr>
 
 
-          <tr class=" 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 block  mb-4 rounded-lg border border-gray-400
+
+
+       <tr class=" 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 block  mb-4 rounded-lg border border-gray-400
            bg-white
            2xl:table-row 2xl:mb-0 2xl:border-0">
 
@@ -491,13 +493,13 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           data-name=" اسم العميل"
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-علي الطائي
+ محمد ابو القميز
         </td>
          <td
           data-name="  اسم الاخصائي  "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-  هالة الفايد
+    فضل أبو سمرة
         </td>
 
 
@@ -507,7 +509,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           data-name=" حالة الجلسة"
           class=" flex items-center gap-4 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-         <div class="font-tajawal-med text-[14px] text-[#F7BA1E] bg-[#FFFCE8] px-[10px] py-1 text-center rounded-full w-fit">قيد التنفيذ</div>
+         <div class="font-tajawal-med text-[14px] text-[#0AA5A8] bg-[#E8FFFB] px-[10px] py-1 text-center rounded-full w-fit">جديدة</div>
         </td>
 
   <td
@@ -516,7 +518,12 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         >
           22/8/2024 ، 04:20م
         </td>
-         
+             <td
+          data-name="  تاريخ الجلسة "
+          class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
+        >
+    22/8/2024 ، 04:20م
+        </td>
 
 
      
@@ -527,7 +534,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           data-name="  نوع الجلسة  "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-   صوتية
+   كتابية
         </td>
 
       
@@ -537,7 +544,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         >  <div class="flex items-center justify-between md:w-full gap-4 max-w-full relative">
     
     <span class="whitespace-nowrap truncate"> 
-150ر.س
+193 ر.س
     </span>
 
     <div class="w-fit dots cursor-pointer"><span class="material-symbols-outlined shrink-0">
@@ -566,11 +573,6 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
 
  
       </tr>
-
-
-
-
-      
 
     </tbody>
   </table>
@@ -615,8 +617,8 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       let options = document.querySelector(".options");
       let notifications = document.querySelector(".notifications");
       let pages = document.querySelector(".pages");
-       
-   
+            let dots=document.querySelectorAll('.dots');
+      let more=document.querySelector('.more');
 
       optionsArrow.addEventListener("click", () => {
         optionsArrow.classList.toggle("bg-gray-400");
@@ -702,16 +704,17 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         }
       });
 
-  document.querySelectorAll('.dots').forEach((dot) => {
-  const more = dot.nextElementSibling; 
-  dot.addEventListener('click', (e) => {
-    e.stopPropagation();
-    more.classList.toggle('opacity-0');
-    more.classList.toggle('invisible');
-    dot.classList.toggle('bg-gray-400');
-    dot.classList.toggle('rounded-full');
-  });
-});
+          dots.addEventListener('click',()=>{
+        more.classList.toggle('opacity-0');
+        more.classList.toggle('invisible');
+    
+        dots.classList.toggle('bg-gray-400');
+        dots.classList.toggle('rounded-full');
+
+
+
+
+      })
   
   </script>
 </body>

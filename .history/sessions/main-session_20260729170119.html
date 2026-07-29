@@ -341,11 +341,11 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
 
     <div class="px-7.5 py-5 ">
 
-  <div class="w-full rounded-lg 2xl:border border-gray-400 ">
+  <div class="w-full rounded-lg 2xl:border border-gray-400 overflow-hidden">
   <table class="w-full border-collapse ">
 
 
-    <thead class="hidden 2xl:table-header-group border-b  rounded-lg overflow-hidden border-gray-400">
+    <thead class="hidden 2xl:table-header-group border-b border-gray-400">
       <tr class="bg-white 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 font-tajawal-med text-label-black text-right">
         <th class="px-5 py-3">رقم الجلسة </th>
         <th class="px-5 py-3">اسم العميل </th>
@@ -366,7 +366,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
     <tbody class="font-tajawal-med  2xl:table-row-group grid grid-cols-1 md:grid-cols-2 gap-4  ">
 
       <tr class=" 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 block  mb-4 rounded-lg border border-gray-400
-           bg-white
+           bg-white overflow-hidden
            2xl:table-row 2xl:mb-0 2xl:border-0">
 
   
@@ -389,18 +389,12 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         >
  محمد ابو القميز
         </td>
-         <td
-          data-name="  اسم الاخصائي  "
-          class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
-        >
-    فضل أبو سمرة
-        </td>
 
 
    
   
         <td
-          data-name=" حالة الجلسة"
+          data-name="حالة الجلسة"
           class=" flex items-center gap-4 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
          <div class="font-tajawal-med text-[14px] text-[#0AA5A8] bg-[#E8FFFB] px-[10px] py-1 text-center rounded-full w-fit">جديدة</div>
@@ -413,10 +407,10 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           22/8/2024 ، 04:20م
         </td>
              <td
-          data-name="  تاريخ الجلسة "
+          data-name=" مدة الجلسة "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-    22/8/2024 ، 04:20م
+        30 دقيقة
         </td>
 
 
@@ -434,17 +428,13 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       
           <td
           data-name="  السعر  "
-          class="  flex gap-2  items-center px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none relative"
-        >  <div class="flex items-center justify-between md:w-full gap-4 max-w-full relative">
-    
-    <span class="whitespace-nowrap truncate"> 
-193 ر.س
-    </span>
-
-    <div class="w-fit dots cursor-pointer"><span class="material-symbols-outlined shrink-0">
+          class=" truncate flex px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none relative"
+        >
+     135ر.س
+       <div class="w-fit dots cursor-pointer"><span class="material-symbols-outlined shrink-0">
       more_vert
     </span></div>
-<div class="more absolute top-full left-0 z-999 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px] text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
+<div class="more absolute top-full left-0 z-50 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px]text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
   <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
   <a href="customerDetails.html">  مشاهدة التفاصيل</a>
     <img src="../images/eye.svg" alt="">
@@ -462,15 +452,16 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
   </div>
 
 </div>
-  </div>
         </td>
 
  
       </tr>
 
 
-          <tr class=" 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 block  mb-4 rounded-lg border border-gray-400
-           bg-white
+
+
+       <tr class="bg-white 2xl:border-b 2xl:border-gray-400 last:2xl:border-b-0 block  mb-4 rounded-lg border border-gray-400
+           bg-white overflow-hidden
            2xl:table-row 2xl:mb-0 2xl:border-0">
 
   
@@ -481,7 +472,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
        <div class="flex items-center gap-2">
        
            <span class="font-tajawal-regular text-green">
-  جلسة #26564
+جلسة #98713
           </span>
        </div>
         </td>
@@ -491,86 +482,56 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
           data-name=" اسم العميل"
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-علي الطائي
+نمط الحياة
         </td>
-         <td
-          data-name="  اسم الاخصائي  "
+
+
+        <td
+          data-name=" مدة الجلسة "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-  هالة الفايد
+       45 دقيقة
         </td>
 
-
-   
   
         <td
-          data-name=" حالة الجلسة"
+          data-name="حالة الجلسة"
           class=" flex items-center gap-4 px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-         <div class="font-tajawal-med text-[14px] text-[#F7BA1E] bg-[#FFFCE8] px-[10px] py-1 text-center rounded-full w-fit">قيد التنفيذ</div>
+         <div class="font-tajawal-med text-[14px] text-[#F7BA1E] bg-[#FFFCE8] px-[10px] py-1 text-center rounded-full w-fit">مكتمل</div>
         </td>
 
-  <td
+     
+        <td
           data-name=" تاريخ الجلسة  "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-          22/8/2024 ، 04:20م
+     23/8/2024 - 02:15م
         </td>
-         
 
-
-     
-      
-
-        
-        <td
-          data-name="  نوع الجلسة  "
+             <td
+          data-name="  الاخصائي  "
           class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
         >
-   صوتية
+  ليلى العوضي
         </td>
 
-      
+
+          <td
+          data-name="  عدد الجلسات  "
+          class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
+        >
+       2
+        </td>
           <td
           data-name="  السعر  "
-          class="  flex gap-2  items-center px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none relative"
-        >  <div class="flex items-center justify-between md:w-full gap-4 max-w-full relative">
-    
-    <span class="whitespace-nowrap truncate"> 
-150ر.س
-    </span>
-
-    <div class="w-fit dots cursor-pointer"><span class="material-symbols-outlined shrink-0">
-      more_vert
-    </span></div>
-<div class="more absolute top-full left-0 z-999 divide-y divide-gray-400  bg-white rounded-lg font-tajawal-med text-[#86909C] w-[185px] text-[14px] opacity-0 invisible transition-all duration-300 ease  ">
-  <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
-  <a href="customerDetails.html">  مشاهدة التفاصيل</a>
-    <img src="../images/eye.svg" alt="">
-
-  </div>
-    <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2">
-  تعديل
-    <img src="../images/edit-2.svg" alt="">
-
-  </div>
-    <div class="px-3 py-1 flex items-center justify-between w-full cursor-pointer gap-2 text-[#F76560] ">
-  حذف
-    <img src="../images/trash.svg" alt="">
-
-  </div>
-
-</div>
-  </div>
+          class=" truncate block px-4 py-3 text-sm sm:px-5 sm:py-4 sm:text-base 2xl:table-cell 2xl:px-5 2xl:py-5 2xl:text-base before:mr-2 before:font-tajawal-med before:content-[attr(data-name)_'_:_'] 2xl:before:content-none"
+        >
+250ر.س
         </td>
 
  
       </tr>
-
-
-
-
-      
 
     </tbody>
   </table>
@@ -615,8 +576,8 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
       let options = document.querySelector(".options");
       let notifications = document.querySelector(".notifications");
       let pages = document.querySelector(".pages");
-       
-   
+            let dots=document.querySelector('.dots');
+      let more=document.querySelector('.more');
 
       optionsArrow.addEventListener("click", () => {
         optionsArrow.classList.toggle("bg-gray-400");
@@ -646,7 +607,7 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         submenu.classList.toggle("hidden");
         submenu.classList.toggle("grid");
         submenu.classList.toggle("translate-y-0");
-        submenu.classList.toggle("-translate-y-1/2");
+        submenu.classList.toggle("-translate-y-50");
         submenu.classList.toggle("opacity-100");
       });
 
@@ -702,16 +663,17 @@ bg-green text-white flex items-center  font-tajawal-med hover:bg-selected-green 
         }
       });
 
-  document.querySelectorAll('.dots').forEach((dot) => {
-  const more = dot.nextElementSibling; 
-  dot.addEventListener('click', (e) => {
-    e.stopPropagation();
-    more.classList.toggle('opacity-0');
-    more.classList.toggle('invisible');
-    dot.classList.toggle('bg-gray-400');
-    dot.classList.toggle('rounded-full');
-  });
-});
+          dots.addEventListener('click',()=>{
+        more.classList.toggle('opacity-0');
+        more.classList.toggle('invisible');
+    
+        dots.classList.toggle('bg-gray-400');
+        dots.classList.toggle('rounded-full');
+
+
+
+
+      })
   
   </script>
 </body>
