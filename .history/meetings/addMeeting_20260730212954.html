@@ -401,7 +401,7 @@
             
            </div>
            </div>
-           <div class="recordedCont hidden">
+           <div class="recordedCont">
             <div class="grid gap-2 w-full">
   <label for="video" class="font-tajawal-med text-label-black/80">
     تحميل فيديو المحاضرة
@@ -914,8 +914,8 @@ choices.forEach(choice=>{
 if(e.target.classList.contains('live')){
   liveCont.classList.add('grid');
   liveCont.classList.remove('hidden')
-      recordedCont.classList.remove('block');
-    recordedCont.classList.add('hidden');
+      recordedCont.classList.add('block');
+    recordedCont.classList.remove('hidden');
 }
 if(e.target.classList.contains('recorded')){
     recordedCont.classList.add('block');
